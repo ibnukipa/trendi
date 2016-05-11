@@ -17,29 +17,35 @@ Class Item_m extends CI_Model{
     }
 	*/
     
-    public function insert($nama, $deskripsi, $foto, $id_admin, $kategori, $genre)
+    //insert new item
+    public function insert($id_fashion, $nama, $jenis, $deskripsi, $foto)
     {
-        $query_ = $this->db->query("INSERT INTO fashion(nama, deskripsi, foto, rating, id_admin, kategori, genre, tanggal) VALUES('$nama', '$deskripsi', '$foto', 0, '$id_admin', '$kategori', '$genre', NOW())");
+        $query_ = $this->db->query("call sp_add_item('$id_fashion', '$nama', '$jenis', '$deskripsi', '$foto')");
     }
     
-    public function update($id_fashion, $nama, $jenis, $deskripsi, $foto)
+    //update item
+    public function update($id_item, $nama, $jenis, $deskripsi, $foto)
     {
-        $query_ = $this->db->query("update fashion set nama = '$nama', deskripsi = '$deskripsi', foto = '$foto', id_admin = '$id_admin', kategori = '$kategori', genre = '$genre' where id = '$id'");
+        $query_ = $this->db->query("update item set nama = '$nama', deskripsi = '$deskripsi', foto = '$foto', jenis= '$jenis' where id = '$id_item'");
     }
     
-    public function delete($id)
+    //delete item from fashion
+    public function delete($id_fashion, $id_item)
     {
-        $query_ = $this->db->query("update fashion set show = 0 where id = '$id'");
+        $query_ = $this->db->query("delete from fashion_item where id_fashion = '$id_fashion' and id_item = '$id_item'");
+        $query_ = $this->db->query("delete from item where id = '$id_item'");
     }
     
-    public function show_all()
+    //show list item per fashion
+    public function show_all_item_fashion($id_fashion)
     {
-        $query_ = $this->db->query("select * from fashion where show = 1");
+        $query_ = $this->db->query("SELECT * FROM item, fashion_item WHERE id_item = id AND id_fashion = '$id_fashion';");
     }
     
-    public function show_by_id($id)
+    //show detail item
+    public function show_item_by_id($id_item)
     {
-        $query_ = $this->db->query("select * from fashion where id = '$id'");
+        $query_ = $this->db->query("select * from item where id = '$id_item'");
     }
 }
     
