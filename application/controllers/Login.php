@@ -7,7 +7,7 @@ class Login extends CI_Controller {
     }
 
     private function set_meta_data() {
-        $data['judul_halaman'] = "MonTA - Login";
+        $data['judul_halaman'] = "Trendi - Login";
 
         $data['warna_utama'] = "#3e464c";
         $data['warna_kedua'] = "#8BC34A";
@@ -75,9 +75,6 @@ class Login extends CI_Controller {
     private function set_session($username) {
         $_SESSION['logged_in']      = (bool)true;
         $_SESSION['username']       = $username;
-        $_SESSION['hak_akses']      = $this->user_tl->get_hak_akses($username);
-        $_SESSION['status_ta_icon'] = "error_outline";
-        $_SESSION['status_ta']      = "Proposal TA belum didaftarkan";
     }
 
     private function berhak($username, $password) {
