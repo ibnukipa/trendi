@@ -40,19 +40,19 @@ class Login extends CI_Controller {
 
 
     //Ajax Only
-    public function cek_username(){
-        if(! $this->input->is_ajax_request()) {
-            redirect('notfound');
-        }
+    // public function cek_username(){
+    //     if(! $this->input->is_ajax_request()) {
+    //         redirect('notfound');
+    //     }
 
-        $username = $this->input->post('username');
+    //     $username = $this->input->post('username');
 
-        if($this->valid_username($username)) {
-            echo json_encode(true);
-        } else {
-            echo json_encode(false);
-        }
-    }
+    //     if($this->valid_username($username)) {
+    //         echo json_encode(true);
+    //     } else {
+    //         echo json_encode(false);
+    //     }
+    // }
 
     public function login() {
     	//untuk menolak akses fungsi login() selain dari ajax
@@ -63,7 +63,7 @@ class Login extends CI_Controller {
 
     	$username		= $this->input->post('username');
     	$password 	    = $this->input->post('password');
-
+        // echo json_encode($this->berhak($username, $password));
     	if($this->berhak($username, $password)) {
     		$this->set_session($username);
     		echo json_encode(true);

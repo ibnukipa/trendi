@@ -20,7 +20,7 @@ Class User_tl extends CI_Model{
     public function verifi_login($username, $password)
     {
         $query_ = $this->db->query("call sp_login('$username', '$password')");
-        $data = $query->result();
+        $data = $query_->row()->komen;
         return $data;
     }
 }
