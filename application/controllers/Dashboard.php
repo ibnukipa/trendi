@@ -19,7 +19,7 @@ class Dashboard extends CI_Controller {
     }
 
     public function set_meta_data() {
-    	$data['judul_halaman'] = "MonTA - Teknik Lingkungan ITS";
+    	$data['judul_halaman'] = "Trendi";
         $data['controller'] = $this;
     	$data['warna_utama'] = "#3e464c";
         $data['warna_kedua'] = "#8BC34A";
@@ -36,8 +36,6 @@ class Dashboard extends CI_Controller {
     {
     	$data = $this->set_meta_data();
 
-    	$data['judul_utama'] 	= "Monitoring Tugas Akhir";
-    	$data['judul_kedua'] 	= "MonTA - Teknik Lingkungan ITS";
     	$data['path_'] 			= array( 0 => "Dashboard" );
         $data['path_icon']      = array( 0 => "dashboard" );
         $data['path_link']      = array( 0 => base_url() . "dashboard" );
@@ -45,31 +43,31 @@ class Dashboard extends CI_Controller {
     }
 
 
-    public function mahasiswa_pedaftaran_proposal_top() {
+    public function new_post_top() {
         if(! $this->input->is_ajax_request()) {
             redirect('notfound');
         }
         $data = $this->set_meta_data();
 
-        $data['path_']          = array( 0 => "Dashboard", 1 => "Pendaftaran" );
+        $data['path_']          = array( 0 => "Dashboard", 1 => "New Post" );
         $data['path_icon']      = array( 0 => "dashboard", 1 => "");
         $data['path_link']      = array( 0 => base_url() . "dashboard", 1 => "#" );
         $this->load->view("status_bar_top", $data);
     }
 
-    public function mahasiswa_pedaftaran_proposal_content() {
+    public function new_post() {
         if(! $this->input->is_ajax_request()) {
             redirect('notfound');
         }
 
-        $this->load->model('user_tl');
+        // $this->load->model('user_tl');
 
         $data = $this->set_meta_data();
-        $data['mahasiswa_nama'] = $this->user_tl->get_nama_lengkap($_SESSION['username']);
+        // $data['mahasiswa_nama'] = $this->user_tl->get_nama_lengkap($_SESSION['username']);
         $data['mahasiswa_nrp']  = $_SESSION['username'];
-        $data['nama_formulir']  = "Formulir Pendaftaran Proposal Tugas Akhir";
-        $data['id_form']        = "pendaftaran_proposal";
-        $this->load->view("form/form_pengajuan_proposal", $data);
+        $data['nama_formulir']  = "Post Baru";
+        $data['id_form']        = "new_post";
+        $this->load->view("form_new_post", $data);
     }
 
     public function submit_proposal() {

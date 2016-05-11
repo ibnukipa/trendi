@@ -17,9 +17,9 @@ class Welcome extends CI_Controller {
 	{
         if($data == 'female')
         {
-            $data=$this->Fashion_m->show_all();
+            $var['d']=$this->Fashion_m->show_all();
             $this->load->view('layout/header_user');
-            $this->load->view('home',$data);
+            $this->load->view('home',$var);
             $this->load->view('layout/footer_user');
         }
         else

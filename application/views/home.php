@@ -1,7 +1,6 @@
 <div id="page-wrapper">
 <div class="row" >
 <!--    Header-->
-<!--
                     <div class="col s12">
                       <div class="card">
                         <div class="card-image">
@@ -16,9 +15,8 @@
                         </div>
                       </div>
                     </div>
--->
 <!--    Content-->
-        <?php foreach ($h->result() as $key) { 
+        <?php foreach ($d as $key) { 
         if ($key->genre =='PEREMPUAN')
     {?>
     
