@@ -4,17 +4,11 @@
 			<div class="card" style="box-shadow: none">
 				<section id="menu-user">
 				<?php 
-                if($_SESSION['hak_akses'] === "A") {
-                    $this->view("menu-l/dash_admin");
-                } else if($_SESSION['hak_akses'] === "D") {
-                    $this->view("menu-l/dash_dosen");
-                } else {
                     $this->view("menu-l/dash_mahasiswa");
-                }
                 ?>
 				</section>
 			</div>
-			<?php $this->view("menu_l"); ?>
+			
 		</div>
 		<section id="content-container">
 			<div class="col s9" style="width: 81%; padding-right: 0;">
@@ -34,38 +28,31 @@
 	</div>
 </div>
 
-<?php
-	if($_SESSION['hak_akses'] === "A") {
+<script src='<?php echo base_url(); ?>assets/js/dash_mahasiswa.js'></script>
+<script>
 
-	} else if($_SESSION['hak_akses'] === "D") {
+function pendaftaran_proposal(caller) {
+	select_this(caller);
+	<?php 
+		$data = $controller->set_meta_data();
+		$data['path_']          = array( 0 => "Dashboard", 1 => "Pendaftaran" );
+		$data['path_icon']      = array( 0 => "dashboard", 1 => "");
+	?>
+	var urlTarget 	= '<?php echo base_url(); ?>dashboard/mahasiswa_pedaftaran_proposal_top';
+	get_view_top(urlTarget, ".status-content");
 
-	} else { ?>
-		<script src='<?php echo base_url(); ?>assets/js/dash_mahasiswa.js'></script>
-		<script>
+	urlTarget = '<?php echo base_url(); ?>dashboard/mahasiswa_pedaftaran_proposal_content';
+	get_view(urlTarget, "#content");
+}
 
-		function pendaftaran_proposal(caller) {
-			select_this(caller);
-			<?php 
-				$data = $controller->set_meta_data();
-				$data['path_']          = array( 0 => "Dashboard", 1 => "Pendaftaran" );
-        		$data['path_icon']      = array( 0 => "dashboard", 1 => "");
-			?>
-			var urlTarget 	= '<?php echo base_url(); ?>dashboard/mahasiswa_pedaftaran_proposal_top';
-			get_view_top(urlTarget, ".status-content");
+function detail_proposal(caller) {
+	select_this(caller);
+	
+	var urlTarget 	= '<?php echo base_url(); ?>dashboard/mahasiswa_detail_proposal_top';
+	get_view_top(urlTarget, ".status-content");
 
-			urlTarget = '<?php echo base_url(); ?>dashboard/mahasiswa_pedaftaran_proposal_content';
-			get_view(urlTarget, "#content");
-		}
+	urlTarget = '<?php echo base_url(); ?>dashboard/mahasiswa_detail_proposal_content';
+	get_view(urlTarget, "#content");
+}
 
-		function detail_proposal(caller) {
-			select_this(caller);
-			
-			var urlTarget 	= '<?php echo base_url(); ?>dashboard/mahasiswa_detail_proposal_top';
-			get_view_top(urlTarget, ".status-content");
-
-			urlTarget = '<?php echo base_url(); ?>dashboard/mahasiswa_detail_proposal_content';
-			get_view(urlTarget, "#content");
-		}
-
-		</script>
-<?php } ?>
+</script>

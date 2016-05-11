@@ -8,9 +8,9 @@
 							<!-- <i class="material-icons icon-list-oprec" style="background-color: <?php echo $warna_kedua; ?>">account_circle</i> -->
 							<div onclick="load_page('<?php echo base_url(); ?>')" style="line-height: 0; display: inline-block; vertical-align: middle;">
 				                <span class="judul_utama disable_select" style="font-size: 30px; font-family: 'antique'; color: <?php echo $warna_keempat; ?>">
-				                	monTA <span style="color: <?php echo $warna_utama; ?>; opacity: .5">login</span>
+				                	trendi <span style="color: <?php echo $warna_utama; ?>; opacity: .5">login</span>
 				                </span>
-				                <span class="judul_kedua disable_select" style="font-weight: 500">Teknik Lingkungan ITS</span>
+				                <span class="judul_kedua disable_select" style="font-weight: 500">It's not about brand. it's about style</span>
 				            </div>
 							<!-- <div class="divider"></div> -->
 						</div>
@@ -48,26 +48,6 @@
 	function load_page(url) {
 		window.location.href = url;
 	}
-	$("#username").focusout(function() {
-		if($('#username').val() == '')
-			console.log("kosong");
-		else {
-			$.ajax({
-				type: "POST",
-				url: '<?php echo base_url();?>login/cek_username',
-				data: $("#login_form").serialize(),
-				dataType: 'json',
-				success: function(data){
-					if(!data) {
-						//console.log("gagal");
-						$("#username").addClass("invalid");
-					    $("#username").prop("aria-invalid", "true");
-					    return false;
-					}
-				}
-			});
-		}
-	});
 </script>
 
 <script>
