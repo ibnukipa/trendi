@@ -1,5 +1,5 @@
 <?php
-Class Fahsion_m extends CI_Model{
+Class Fashion_m extends CI_Model{
     
     public function __construct()
     {

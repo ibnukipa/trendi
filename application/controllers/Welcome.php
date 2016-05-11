@@ -4,6 +4,8 @@ class Welcome extends CI_Controller {
 
 	public function __construct() {
         parent::__construct();
+        
+        $this->load->model('Fashion_m');
     }
 
     public function index()
@@ -11,11 +13,17 @@ class Welcome extends CI_Controller {
         $this->load->view("index");
     }
     
-    public function home()
+    public function home($data)
 	{
-        $this->load->view('layout/header_user');
-        $this->load->view('home');
-        $this->load->view('layout/footer_user');
+        if($data == 'female')
+        {
+            $data=$this->Fashion_m->show_all();
+            $this->load->view('layout/header_user');
+            $this->load->view('home',$data);
+            $this->load->view('layout/footer_user');
+        }
+        else
+            echo "haha";
 	}
     
     public function season()
