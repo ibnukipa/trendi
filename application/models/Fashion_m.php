@@ -39,12 +39,16 @@ Class Fashion_m extends CI_Model{
     public function show_all()
     {
         $query_ = $this->db->query("select * from fashion where show_ = 1");
+        $data = $query_->result();
+        return $data;
     }
     
     //show detail fashion per fashion
     public function show_by_id($id)
     {
         $query_ = $this->db->query("select * from fashion where id = '$id'");
+        $data = $query_->result();
+        return $data;
     }
 }
     

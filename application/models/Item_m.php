@@ -40,12 +40,16 @@ Class Item_m extends CI_Model{
     public function show_all_item_fashion($id_fashion)
     {
         $query_ = $this->db->query("SELECT * FROM item, fashion_item WHERE id_item = id AND id_fashion = '$id_fashion';");
+        $data = $query_->result();
+        return $data;
     }
     
     //show detail item
     public function show_item_by_id($id_item)
     {
         $query_ = $this->db->query("select * from item where id = '$id_item'");
+        $data = $query_->result();
+        return $data;
     }
 }
     
