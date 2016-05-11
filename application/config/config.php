@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 <<<<<<< HEAD
-$config['base_url'] = 'http://localhost/trendy/';
+$config['base_url'] = 'http://localhost/trendi/';
 =======
 $config['base_url'] = 'http://localhost/trendi/';
 >>>>>>> e92109892d42b6f6dea5ddbb28afaae87480f706
