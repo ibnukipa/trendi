@@ -41,8 +41,8 @@
         <div class="nav-wrapper fixed">
             <a href="#" class="show-on-large disable_select" style="float: left; position: relative; z-index: 1;"><i class="material-icons" style="font-size: 40px">local_florist</i></a>
             <div style="line-height: 0; display: inline-block; vertical-align: middle; margin-left: 30px; margin-top: -4px">
-                <span class="judul_utama disable_select"><?php echo $judul_utama ?></span>
-                <span class="judul_kedua disable_select"><?php echo $judul_kedua ?></span>
+                <span class="judul_utama disable_select">Trendi</span>
+                <span class="judul_kedua disable_select">Trendi</span>
             </div>
             <ul style="float: right">
                 
@@ -65,15 +65,7 @@
                             
                             <span style="display: block; position: relative; line-height: 1; font-size: 20px"><?php echo $_SESSION['username']; ?></span>
                             <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 15px">
-                                <?php 
-                                    if($_SESSION['hak_akses'] === "A") { 
-                                        echo "Admin";
-                                    } else if($_SESSION['hak_akses'] === "D") {
-                                        echo "Dosen";
-                                    } else {
-                                        echo "Mahasiswa";
-                                    }
-                                ?>
+                                Admin
                             </span>
                         </span>
                     </a>
