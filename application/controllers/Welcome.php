@@ -25,6 +25,13 @@ class Welcome extends CI_Controller {
         $this->load->view('season');
         $this->load->view('layout/footer_user');
 	}
+    
+    public function detail()
+	{
+        $this->load->view('layout/header_user');
+        $this->load->view('detail');
+        $this->load->view('layout/footer_user');
+	}
 }
     
     
