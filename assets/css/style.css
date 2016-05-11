@@ -1,0 +1,415 @@
+
+@font-face {
+    font-family: antique;
+    src: url(../font/monta.woff);
+}
+
+/*Not found	*/
+.error {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	color: #B0BEC5;
+	display: table;
+	font-weight: 100;
+	font-family: 'Lato';
+}
+
+.error-container {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.error-content {
+	text-align: center;
+	display: inline-block;
+}
+
+.error-title {
+	font-size: 96px;
+	margin-bottom: 0px;
+}
+
+.error p {
+	color: red;
+	font-weight: 700;
+}
+
+/*Login*/
+#login .container {
+	height: 100vh;
+}
+
+#login .container .row {
+	height: 100%;
+	margin-bottom: 0;
+}
+
+#login .row .col.l5 {
+    margin-right: auto;
+}
+
+#login .icon-login {
+	text-align: center;
+}
+
+.icon-login i {
+	font-size: 10rem;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow:0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px white inset;
+    -webkit-text-fill-color: #333;
+}
+
+#button-login {
+	-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.toast {
+	background-color: white;
+	/*color: red;*/
+	font-weight: 500;
+}
+
+.logo img {
+	padding-top: 10%;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 100%;
+}
+
+nav {
+	position: fixed;
+	z-index: 9;
+}
+
+nav .nav-wrapper {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/*.hidden-nav {
+	top: -100%;
+	-webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s;
+}
+
+.show-nav {
+	position: fixed;
+	top: 0;
+}*/
+
+#mobile-demo li:hover {
+	background: rgba(0,0,0,.07);
+}
+
+#panel-akun {
+	position: absolute;
+	width: 1000px;
+	display: none;
+}
+
+.coklat {
+	color: #5D4037;
+}
+
+.side-nav a {
+	padding: 0;
+}
+
+nav ul a:hover {
+	background-color: rgba(255,255,255,0);
+}
+
+.side-nav .collapsible-header {
+    margin: 0;
+}
+
+.collapsible-body li {
+	padding-left: 15%;
+}
+
+
+.judul_utama {
+	display: block;
+    position: relative;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+}
+
+.judul_kedua {
+	display: block;
+    position: relative;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    font-weight: 300;
+    opacity: .5;
+    box-sizing: border-box;
+}
+
+li a {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.bayangan_2dp {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.disable_select {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+  pointer-events: none;
+}
+
+.font_button {
+	text-transform: none;
+	font-weight: 500;
+}
+
+label[data-error]:after {
+    white-space: nowrap;
+}
+
+.icon-list-oprec {
+    color: white;
+    background: #673AB7;
+    font-size: 40px;
+    margin-right: 20px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+label[data-error]:after {
+	margin-top: -10px;
+}
+
+.hover-menu a:hover:not(.active){
+	background-color: rgba(255, 255, 255, .1);
+}
+
+.active[data-warna=utama] {
+	background-color: #3e464c !important;
+}
+
+.active[data-warna=kedua] {
+	background-color: #8BC34A !important;
+}
+
+.active[data-warna=ketiga] {
+	background-color: #7EB83D !important;
+}
+
+.active[data-warna=keempat] {
+	background-color: #689F38 !important;
+}
+
+.wadah {
+	/*width: 100%;*/
+	margin: 0 30px;
+	padding-top: 80px;
+	/*height: 1000px;*/
+}
+
+li .collapsible-header {
+	transition: background-color .3s;
+}
+
+.nama-menu .collapsible-header {
+	cursor: default;
+}
+
+li:not(.nama-menu) .collapsible-header:not(.selected):hover {
+	background-color: rgba(0, 0, 0, .05);
+}
+
+.collapsible-header.active {
+	/*border-left: solid 3px #7EB83D;*/
+	background-color: rgba(0, 0, 0, .04);
+	border-color: #7EB83D;
+	border-width: 2px;
+}
+
+
+
+.collapsible-header.active > a i.right {
+	color: #7EB83D;
+}
+
+.collapsible-header.active > a i.change_icon:before {
+	transition: .25s;
+	content: 'remove_circle';
+	opacity: 1;
+}
+
+.collapsible-header i.right {
+	font-size: 20px;
+}
+
+.detail {
+	right: 1rem;
+	visibility: hidden;
+	color: #7EB83D;
+	transition: visibility .1s;
+}
+
+.collapsible-header:hover > a .detail {
+	visibility: visible;
+}
+
+.collection a.collection-item:not(.active):hover {
+    background-color: rgba(0, 0, 0, .04);
+    color: #689F38;
+}
+
+.collapsible-header.selected > a .detail {
+	visibility: visible;
+}
+
+.collection a.collection-item {
+    display: block;
+    padding: 10px;
+    padding-right:  15px;
+    transition: .25s;
+    color: #3e464c;
+    font-size: 14px;
+}
+
+a {
+	color: #3e464c;
+}
+
+.change_icon::before {
+	transition: .25s;
+	content: 'add_circle';
+	opacity: .5;
+}
+
+.status-content {
+	background-color: #0288D1;
+	display: block;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    padding-right: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: -1px;
+}
+
+.selected a {
+	color: #689F38;
+}
+
+.progress {
+	display: none;
+	visibility: hidden;
+}
+
+.head-form {
+	text-align: center; 
+	font-size: 25px; 
+	margin: 0; 
+	text-transform: uppercase;
+	/*text-decoration: underline;*/
+	font-weight: 500;
+	color: #0288D1;
+}
+
+#content {
+	background-color: white;
+	border-bottom: 20px solid #0288D1;
+	margin-bottom: -20px;
+}
+
+#pendaftaran_proposal {
+	background-color: rgba(2, 136, 209, .05);
+	padding: 20px;
+	border: 1px dashed #0288D1;
+	margin: 5px;
+	/*border-left: 3px solid #1976D2;*/
+}
+
+#pendaftaran_proposal input{
+	font-size: 1.3rem;
+}
+
+#pendaftaran_proposal .input-field .prefix {
+	font-size: 2.4rem;
+}
+
+#pendaftaran_proposal .input-field .prefix.active {
+	color: #0288D1;
+}
+
+#pendaftaran_proposal input + label.active, #pendaftaran_proposal textarea + label.active {
+	color: #0288D1;
+}
+
+#pendaftaran_proposal input:disabled + label{
+	color: #0288D1;
+}
+
+#pendaftaran_proposal input:focus:not([readonly]), #pendaftaran_proposal textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #0288D1;
+	box-shadow: 0 1px 0 0 #0288D1;
+}
+
+#pendaftaran_proposal input.valid {
+	border-bottom: 1px solid #0288D1;
+	box-shadow: 0 1px 0 0 #0288D1;
+}
+
+#pendaftaran_proposal input:disabled {
+	color: #3e464c;
+	font-weight: 500;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #0288D1;
+    opacity:  .3;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #0288D1;
+   opacity:  .3;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #0288D1;
+   opacity:  .3;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #0288D1;
+   opacity:  .3;
+}
+
+.btn-hov a.btn {
+	transition: 0.3s;
+}
+
+.btn-hov a.btn[data-warna=biru] {
+	background: #0288D1;
+	opacity: .8;
+	font-size: 20px;
+}
+
+.btn-hov a.btn:hover {
+	opacity: 1;
+}
