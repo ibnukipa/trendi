@@ -10,4 +10,5 @@ class Welcome extends CI_Controller {
     {
         $this->load->view("user_view/welcome");
     }
+
 }
