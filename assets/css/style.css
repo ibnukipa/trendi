@@ -340,7 +340,7 @@ a {
 	margin-bottom: -20px;
 }
 
-#pendaftaran_proposal {
+#new_post {
 	background-color: rgba(2, 136, 209, .05);
 	padding: 20px;
 	border: 1px dashed #0288D1;
@@ -348,37 +348,37 @@ a {
 	/*border-left: 3px solid #1976D2;*/
 }
 
-#pendaftaran_proposal input{
+#new_post input{
 	font-size: 1.3rem;
 }
 
-#pendaftaran_proposal .input-field .prefix {
+#new_post .input-field .prefix {
 	font-size: 2.4rem;
 }
 
-#pendaftaran_proposal .input-field .prefix.active {
+#new_post .input-field .prefix.active {
 	color: #0288D1;
 }
 
-#pendaftaran_proposal input + label.active, #pendaftaran_proposal textarea + label.active {
+#new_post input + label.active, #new_post textarea + label.active {
 	color: #0288D1;
 }
 
-#pendaftaran_proposal input:disabled + label{
+#new_post input:disabled + label{
 	color: #0288D1;
 }
 
-#pendaftaran_proposal input:focus:not([readonly]), #pendaftaran_proposal textarea:focus:not([readonly]) {
+#new_post input:focus:not([readonly]), #new_post textarea:focus:not([readonly]) {
 	border-bottom: 1px solid #0288D1;
 	box-shadow: 0 1px 0 0 #0288D1;
 }
 
-#pendaftaran_proposal input.valid {
+#new_post input.valid {
 	border-bottom: 1px solid #0288D1;
 	box-shadow: 0 1px 0 0 #0288D1;
 }
 
-#pendaftaran_proposal input:disabled {
+#new_post input:disabled {
 	color: #3e464c;
 	font-weight: 500;
 }
@@ -413,3 +413,4 @@ a {
 .btn-hov a.btn:hover {
 	opacity: 1;
 }
+
