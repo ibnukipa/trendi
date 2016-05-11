@@ -24,7 +24,7 @@ Class Item_m extends CI_Model{
     }
     
     //update item
-    public function update($id_item $nama, $jenis, $deskripsi, $foto)
+    public function update($id_item, $nama, $jenis, $deskripsi, $foto)
     {
         $query_ = $this->db->query("update item set nama = '$nama', deskripsi = '$deskripsi', foto = '$foto', jenis= '$jenis' where id = '$id_item'");
     }
