@@ -11,7 +11,7 @@
                           <p>Elegant ft Casual</p>
                         </div>
                         <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
+                          <a href="<?php echo base_url()?>welcome/detail" style="color:#1b5e20;">Readmore</a>
                         </div>
                       </div>
                     </div>
@@ -39,7 +39,7 @@
                           <p>Elegant ft Casual</p>
                         </div>
                         <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
+                          <a href="<?php echo base_url()?>welcome/detail" style="color:#1b5e20;">Readmore</a>
                         </div>
                       </div>
                     </div>
@@ -53,7 +53,7 @@
                           <p>Elegant ft Casual</p>
                         </div>
                         <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
+                          <a href="<?php echo base_url()?>welcome/detail" style="color:#1b5e20;">Readmore</a>
                         </div>
                       </div>
                     </div>
@@ -75,7 +75,7 @@
                           <div><p>Elegant ft Casual sjncmi 9mdv, jbrm,</p></div>
                         </div>
                         <div class="card-action">
-                          <a href="" style="color:#1b5e20;"><i class="material-icons right">keyboard_arrow_right</i>Readmore</a>
+                          <a href="<?php echo base_url()?>welcome/detail" style="color:#1b5e20;"><i class="material-icons right">keyboard_arrow_right</i>Readmore</a>
                         </div>
                       </div>
                     </div>
