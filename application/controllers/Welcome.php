@@ -8,6 +8,16 @@ class Welcome extends CI_Controller {
 
     public function index()
     {
-        $this->load->view("user_view/welcome");
+        $this->load->view("index");
     }
+    
+    public function home()
+	{
+        $this->load->view('layout/header_user');
+        $this->load->view('home');
+        $this->load->view('layout/footer_user');
+	}
 }
+    
+    
+
