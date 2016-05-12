@@ -48,8 +48,8 @@
 			<li <?php if($page == "trend") { ?> class="current_page_item" <?php } ?> >  <a href="<?php echo base_url()?>welcome/home/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Trend</a>
             </li>
 			<li <?php if($page == "session") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/season/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Season</a></li>
-			<li><a href="#" accesskey="2" title="">Event</a></li>
-			<li><a href="#" accesskey="3" title="">Accessories</a></li>
+			<li <?php if($page == "event") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/event/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Event</a></li>
+<!--			<li><a href="#" accesskey="3" title="">Accessories</a></li>-->
 			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
 		</ul>
 	</div>
