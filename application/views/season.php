@@ -7,12 +7,12 @@
                     <div class="col-lg-4">
                       <div class="card">
                         <div class="card-image">
-                          <img src="images/aa.png" style="width:100%" alt="" class="img-rounded"/>
+                          <img src="<?php echo $key->foto ?>" alt="" class="img-rounded"/>
                         </div>
                         <div class="card-content">
                             <span class="card-title" style="color:#f57c00;width:100%;"><?php echo $key->nama ?></span>
                             <br>
-                            <span style="text-align: left;">28-03-2016</span>
+                            <span style="text-align: left; color:#9e9e9e"><?php echo $key->tanggal ?></span>
                             
                           <p><?php echo $key->deskripsi ?></p>
                         </div>
