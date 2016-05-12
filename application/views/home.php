@@ -17,8 +17,8 @@
                     </div>
 <!--    Content-->
         <?php foreach ($d as $key) { 
-        if ($key->genre =='PEREMPUAN')
-    {?>
+        //if ($key->genre =='PEREMPUAN')
+    //{?>
     
     
                     <div class="col-lg-4">
@@ -35,7 +35,8 @@
                         </div>
                       </div>
                     </div>
-    <?php } } ?>
+    <?php //} 
+        } ?>
                   </div>
 
 </div>

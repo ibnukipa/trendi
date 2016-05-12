@@ -15,29 +15,32 @@ class Welcome extends CI_Controller {
     
     public function home($data)
 	{
-        if($data == 'female')
-        {
-            $var['d']=$this->Fashion_m->show_all();
+        $this->session->set_userdata('genre',$data);
+       
+            $var['d']=$this->Fashion_m->show_all($data);
+            //echo $data;
             $this->load->view('layout/header_user');
             $this->load->view('home',$var);
             $this->load->view('layout/footer_user');
-        }
-        else
-            echo "haha";
+       
 	}
     
-    public function season()
+    public function season($data)
 	{
+        $this->session->set_userdata('genre',$data);
+        $var['d']=$this->Fashion_m->show_all($data);
         $this->load->view('layout/header_user');
         $this->load->view('layout/sidebar');
-        $this->load->view('season');
+        $this->load->view('season',$var);
         $this->load->view('layout/footer_user');
 	}
     
-    public function detail()
+    public function detail($data,$gender)
 	{
+        $this->session->set_userdata('genre',$gender);
+        $var['d']=$this->Fashion_m->show_by_id($data);
         $this->load->view('layout/header_user');
-        $this->load->view('detail');
+        $this->load->view('detail', $var);
         $this->load->view('layout/footer_user');
 	}
 }
