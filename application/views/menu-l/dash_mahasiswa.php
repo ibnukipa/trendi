@@ -4,7 +4,7 @@
             Dashboard menu
         </div>
     </li>
-    <li>
+    <!-- <li>
         <div class="collapsible-header">
             <a style="color: <?php echo $warna_utama ?>" href="#!">
                 <i class="material-icons left">book</i>
@@ -64,8 +64,8 @@
                 </li>
             </ul>
         </div>
-    </li>
-    <li>
+    </li> -->
+<!--     <li>
         <div class="collapsible-header">
             <a style="color: <?php echo $warna_utama ?>" href="#!">
                 <i class="material-icons left">book</i>
@@ -88,22 +88,39 @@
         <div class="collapsible-body">
             
         </div>
-    </li>
-    <!-- <li>
-        <div class="collapsible-header" style="border: none">
-            <a style="color: <?php echo $warna_utama ?>" href="#!">
+    </li> -->
+    <li>
+        <div onclick="new_post(this)" class="collapsible-header" style="border: none">
+            <a style="color: <?php echo $warna_utama ?>">
                 <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">insert_drive_file</i>
-                <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">file_download</i>
+                <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">add_box</i>
                 <span class="hide-on-small-only" style="vertical-align: middle; text-align: left; display: inline-block">
                     <span style="display: block; position: relative; line-height: 1; font-size: 15px; font-weight: 500">
-                    Ketentuan TA
+                    New Post
                     </span>
-                    <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 15px">
+                    <!-- <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 15px">
                     Proposal TA
-                    </span>
+                    </span> -->
                 </span>
             </a>
         </div>
-    </li> -->
+    </li>
+
+    <li>
+        <div class="collapsible-header" style="border: none">
+            <a style="color: <?php echo $warna_utama ?>" href="#!">
+                <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">import_contacts</i>
+                <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">add</i>
+                <span class="hide-on-small-only" style="vertical-align: middle; text-align: left; display: inline-block">
+                    <span style="display: block; position: relative; line-height: 1; font-size: 15px; font-weight: 500">
+                    List Post
+                    </span>
+                    <!-- <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 15px">
+                    Proposal TA
+                    </span> -->
+                </span>
+            </a>
+        </div>
+    </li>
     
 </ul>

@@ -31,17 +31,13 @@
 <script src='<?php echo base_url(); ?>assets/js/dash_mahasiswa.js'></script>
 <script>
 
-function pendaftaran_proposal(caller) {
+function new_post(caller) {
 	select_this(caller);
-	<?php 
-		$data = $controller->set_meta_data();
-		$data['path_']          = array( 0 => "Dashboard", 1 => "Pendaftaran" );
-		$data['path_icon']      = array( 0 => "dashboard", 1 => "");
-	?>
-	var urlTarget 	= '<?php echo base_url(); ?>dashboard/mahasiswa_pedaftaran_proposal_top';
+
+	var urlTarget 	= '<?php echo base_url(); ?>dashboard/new_post_top';
 	get_view_top(urlTarget, ".status-content");
 
-	urlTarget = '<?php echo base_url(); ?>dashboard/mahasiswa_pedaftaran_proposal_content';
+	urlTarget = '<?php echo base_url(); ?>dashboard/new_post';
 	get_view(urlTarget, "#content");
 }
 

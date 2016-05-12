@@ -40,12 +40,16 @@ Class Kain_m extends CI_Model{
     public function show_all_kain_fashion($id_fashion)
     {
         $query_ = $this->db->query("SELECT * FROM kain, fashion_kain WHERE id_kain = id AND id_fashion = '$id_fashion';");
+        $data = $query_->result();
+        return $data;
     }
     
     //show detail kain
     public function show_kain_by_id($id_kain)
     {
         $query_ = $this->db->query("select * from kain where id = '$id_kain'");
+        $data = $query_->result();
+        return $data;
     }
 }
     

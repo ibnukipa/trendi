@@ -40,12 +40,16 @@ Class Toko_m extends CI_Model{
     public function show_all_toko_fashion($id_fashion)
     {
         $query_ = $this->db->query("SELECT * FROM toko, fashion_toko WHERE id_toko = id AND id_fashion = '$id_fashion';");
+        $data = $query_->result();
+        return $data;
     }
     
     //show detail toko
     public function show_toko_by_id($id_toko)
     {
         $query_ = $this->db->query("select * from toko where id = '$id_toko'");
+        $data = $query_->result();
+        return $data;
     }
 }
     
