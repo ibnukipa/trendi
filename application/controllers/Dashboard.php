@@ -101,4 +101,23 @@ class Dashboard extends CI_Controller {
 
         $this->load->view("detail_proposal", $data);
     }
+    
+    public function new_fashion()
+    {
+        $this->load->view('form_post');
+    }
+    
+    public function insert_fashion()
+    {
+        $nama = $this->input->post('nama');
+        $deskripsi = $this->input->post('deskripsi');
+        $foto = "upload/1.jpg";
+        $id_admin = 1;
+        $katgori = $this->input->post('kategori');
+        $genre = $this->input->post('genre');
+        
+        $this->load->model('fashion_m');
+        $this->fashion_m->insert($nama, $deskripsi, $foto, $id_admin, $kategori, $genre);
+        echo "berhasil";
+    }
 }
