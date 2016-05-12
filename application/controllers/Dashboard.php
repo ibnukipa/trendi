@@ -72,10 +72,15 @@ class Dashboard extends CI_Controller {
             redirect('notfound');
         }
         
-        $nama_fashion       = $this->input->post('nama_fashion');
-        $foto_fashion       = $this->input->post('foto_fashion');
-        $deskripsi_fash     = $this->input->post('deskripsi_fashion');
-        $gender_fashion     = $this->input->post('gender');
+        $nama = $this->input->post('nama');
+        $deskripsi = $this->input->post('deskripsi');
+        $foto = "upload/1.jpg";
+        $id_admin = 1;
+        $katgori = $this->input->post('kategori');
+        $genre = $this->input->post('genre');
+        
+        $this->fashion_m->insert($nama, $deskripsi, $foto, $id_admin, $kategori, $genre);
+        echo json.encode(TRUE);
     }
     
     public function new_fashion()

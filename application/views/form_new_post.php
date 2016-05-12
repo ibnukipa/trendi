@@ -3,7 +3,7 @@
 </h4>
 <h6 class="center" style="margin-bottom: 20px; color: <?php echo $warna_utama ?>; opacity: .5">Trendi</h6>
 <div class="divider"></div>
-<form id="<?php echo $id_form; ?>" class="form-blue" >
+<form id="<?php echo $id_form; ?>" class="form-blue" action="<?php echo base_url(); ?>dashboard/new_post">
 	<div class="row" style="margin: 0">
 		<div class="input-field col s12" style="margin-bottom: 10px">
 			<i class="material-icons prefix">import_contacts</i>
@@ -25,6 +25,7 @@
 			<label for="deskripsi_fashion" class="active">Deskripsi Fashion</label>
 		</div>
 		<div class="col s12" style="margin-bottom: 10px">
+        <label for="deskripsi_fashion" class="active">Gender</label>
 			<p>
 			<input name="gender" type="radio" id="test1" />
 			<label for="test1">Male</label>
@@ -32,6 +33,21 @@
 		<p>
 			<input name="gender" type="radio" id="test2" />
 			<label for="test2">Female</label>
+		</p>
+		</div>
+        <div class="col s12" style="margin-bottom: 10px">
+        <label for="deskripsi_fashion" class="active">Kategori</label>
+			<p>
+			<input name="kategori" type="radio" id="kategori1" />
+			<label for="kategori1">TREND</label>
+		</p>
+		<p>
+			<input name="kategori" type="radio" id="kategori2" />
+			<label for="kategori2">SESSION</label>
+		</p>
+        <p>
+			<input name="kategori" type="radio" id="kategori3" />
+			<label for="kategori3">EVENT</label>
 		</p>
 		</div>
 
