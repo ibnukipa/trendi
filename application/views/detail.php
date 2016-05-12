@@ -1,4 +1,7 @@
 <section>
+    
+    <?php foreach ($d as $key) { ?>
+    
 	<div class="container" style="padding-top: 30px">
 		<div class="row">
 			<div class="col s12" id="male_1">
@@ -12,7 +15,11 @@
 								<div class="row">
 									<div class="col s12" style="padding-bottom: 20px">
 							  			<h5 style="color:#f57c00;"><?php echo $key->nama ?></h5>
+                                        <br>
+                            <span style="text-align: left; color:#9e9e9e"><?php echo $key->tanggal ?></span>
+                                        <br>
 							  		</div>
+<!--
 							  		<div class="col s12">
 							  			<div class="col s2" style="padding-left: 0">
 							  				<img class="icon_item" src="assets/img/baju.png" style="width: 100%">
@@ -33,6 +40,8 @@
 							  				<img class="icon_item" src="assets/img/kaca.png" style="width: 100%">
 							  			</div>
 							  		</div>
+-->
+<!--
 							  		<div class="col s12" style="padding-top: 1%">
 							  			<div class="col s2" style="padding-left: 0">
 							  				<img class="icon_item" src="assets/img/baju.png" style="width: 100%">
@@ -53,8 +62,9 @@
 							  				<img class="icon_item" src="assets/img/kaca.png" style="width: 100%">
 							  			</div>
 							  		</div>
+-->
 							  		<div class="col s12" style="padding-top: 20px">
-							  			<p style="text-align: justify"><?php echo $key->deskripsi ?></p>
+							  			<p style="text-align: justify"><?php echo $key->deskripsi ?></h5></p>
 							  		</div>
 							  	</div>
 							</div>
@@ -96,9 +106,12 @@
 					</div>
 					<div class="card-action">
 					  <div class="chip">
+<!--
 					  	<img src="assets/img/male_tag.png" alt="Contact Person">
+					   
 					  </div>
-					  <span><a class="waves-effect btn-flat" style="color: #727272; margin-right: 0"><i class="material-icons left">date_range</i>28-03-2016</a></span>
+-->
+<!--					  <span><a class="waves-effect btn-flat" style="color: #727272; margin-right: 0"><i class="material-icons left">date_range</i>28-03-2016</a></span>-->
 						<span class="star-rating right" style="margin-right: 20px;">
 							<input type="radio" name="rating" value="1"><i></i>
 							<input type="radio" name="rating" value="2"><i></i>
@@ -160,10 +173,9 @@
 					<div class="card-action">
 					  <div class="chip">
 					  	<img src="assets/img/female_tag.png" alt="Contact Person">
-					    <?php echo $jenis_fashion; ?>
 					  </div>
 					  <span><a class="waves-effect btn-flat" style="color: #727272; margin-right: 0"><i class="material-icons left">date_range</i>28-03-2016</a></span>
-					  <a href="<?php echo base_url() ?><?php echo strtolower($jenis_fashion); ?>/detail" class="waves-effect waves-light btn right green"><i class="material-icons right">keyboard_arrow_right</i>Readmore</a>
+					  <a href="" class="waves-effect waves-light btn right green"><i class="material-icons right">keyboard_arrow_right</i>Readmore</a>
 					
 					</div>
 				</div>
@@ -213,14 +225,14 @@
 					<div class="card-action">
 					  <div class="chip">
 					  	<img src="assets/img/female_tag.png" alt="Contact Person">
-					    <?php echo $jenis_fashion; ?>
 					  </div>
 					  <span><a class="waves-effect btn-flat" style="color: #727272; margin-right: 0"><i class="material-icons left">date_range</i>28-03-2016</a></span>
-					  <a href="<?php echo base_url() ?><?php echo strtolower($jenis_fashion); ?>/detail" class="waves-effect waves-light btn right green"><i class="material-icons right">keyboard_arrow_right</i>Readmore</a>
+					  <a href="" class="waves-effect waves-light btn right green"><i class="material-icons right">keyboard_arrow_right</i>Readmore</a>
 					
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+<?php }  ?>
 </section>

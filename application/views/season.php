@@ -1,7 +1,7 @@
  <div class="col-sm-9 col-md-9">
             <div class="well">
                 <?php foreach ($d as $key) { 
-        if ($key->kategori =='TREND')
+        if ($key->kategori =='SEASON')
     {?>
                 <div class="row" >
                     <div class="col-lg-4">

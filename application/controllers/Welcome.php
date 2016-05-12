@@ -37,11 +37,22 @@ class Welcome extends CI_Controller {
         $this->load->view('layout/footer_user');
 	}
     
-    public function detail($data,$gender)
+    public function event($data)
 	{
-        $this->session->set_userdata('genre',$gender);
+        $this->session->set_userdata('genre',$data);
+        $var['page']="event";
+        $var['d']=$this->Fashion_m->show_all($data);
+        $this->load->view('layout/header_user', $var);
+        $this->load->view('layout/sidebar');
+        $this->load->view('event',$var);
+        $this->load->view('layout/footer_user');
+	}
+    
+    public function detail($data)
+	{
+        $var['page']="";
         $var['d']=$this->Fashion_m->show_by_id($data);
-        $this->load->view('layout/header_user');
+        $this->load->view('layout/header_user', $var);
         $this->load->view('detail', $var);
         $this->load->view('layout/footer_user');
 	}
