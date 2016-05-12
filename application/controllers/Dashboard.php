@@ -71,29 +71,24 @@ class Dashboard extends CI_Controller {
         if(! $this->input->is_ajax_request()) {
             redirect('notfound');
         }
+        $this->load->model('fashion_m');
+
+        $nama       = $this->input->post('deskripsi_fashion');
+        $deskripsi  = $this->input->post('deskripsi_fashion');
+        $foto       = "upload/1.jpg";
+        $id_admin   = 1;
+        $katgori    = $this->input->post('kategori');
+        $genre      = $this->input->post('gender');
         
-        $nama_fashion       = $this->input->post('nama_fashion');
-        $foto_fashion       = $this->input->post('foto_fashion');
-        $deskripsi_fash     = $this->input->post('deskripsi_fashion');
-        $gender_fashion     = $this->input->post('gender');
+        // if()
+        // echo json_encode($this->fashion_m->insert($nama, $deskripsi, $foto, $id_admin, $kategori, $genre);
+        // else
+            // echo json_encode("false");
     }
     
     public function new_fashion()
     {
         $this->load->view('form_post');
     }
-    
-    public function insert_fashion()
-    {
-        $nama = $this->input->post('nama');
-        $deskripsi = $this->input->post('deskripsi');
-        $foto = "upload/1.jpg";
-        $id_admin = 1;
-        $katgori = $this->input->post('kategori');
-        $genre = $this->input->post('genre');
-        
-        $this->load->model('fashion_m');
-        $this->fashion_m->insert($nama, $deskripsi, $foto, $id_admin, $kategori, $genre);
-        echo "berhasil";
-    }
+
 }

@@ -20,7 +20,7 @@ Class Fashion_m extends CI_Model{
     //insert new fashion
     public function insert($nama, $deskripsi, $foto, $id_admin, $kategori, $genre)
     {
-        $query_ = $this->db->query("INSERT INTO fashion(nama, deskripsi, foto, rating, id_admin, kategori, genre, tanggal) VALUES('$nama', '$deskripsi', '$foto', 0, '$id_admin', '$kategori', '$genre', NOW())");
+        return $this->db->query("INSERT INTO fashion(nama, deskripsi, foto, rating, id_admin, kategori, genre, tanggal) VALUES('$nama', '$deskripsi', '$foto', 0, '$id_admin', '$kategori', '$genre', NOW())");;
     }
     
     //update fashion

@@ -43,13 +43,7 @@ function submit_form(base_url, id_form) {
 		data: $("#" + id_form).serialize(),
 		dataType: 'json',
 		success: function(data){
-			if(data)
-				console.log("berhasil");
-			else
-				console.log("gagal");
-		},
-		beforeSend: function(xhr, opts) {
-			console.log("Loading");
+			console.log(data);
 		}
 	})
 }
