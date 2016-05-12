@@ -26,7 +26,7 @@
                 <div class="col-lg-4">
                       <div class="card">
                         <div class="card-image">
-                          <img src="<?php echo $key->foto ?>" style="width:100%" alt="" class="img-rounded"/>
+                          <img src="<?php echo base_url() . $key->foto ?>" style="width:100%" alt="" class="img-rounded"/>
                         </div>
                         <div class="card-content">
                             <span class="card-title" style="color:#f57c00;"><?php echo $key->nama ?></span>
