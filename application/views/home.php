@@ -35,7 +35,7 @@
                           <p><?php echo $key->deskripsi ?></p>
                         </div>
                         <div class="card-action">
-                          <a href="<?php echo base_url()?>welcome/detail/<?php echo $key->id ?>/<?php echo $key->genre ?>" style="color:#1b5e20;">Readmore</a>
+                          <a href="<?php echo base_url()?>welcome/detail/<?php echo $key->id ?>" style="color:#1b5e20;">Readmore</a>
                         </div>
                       </div>
                     </div>

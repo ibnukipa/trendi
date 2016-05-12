@@ -14,7 +14,7 @@
                             <table class="table">
                                 <tr>
                                     <td>
-                                        <span class="glyphicon glyphicon-certificate"></span><a href="indexb.html" style="color:#2e7d32;"> Kemarau (Mentari)</a>
+                                        <span class="glyphicon glyphicon-certificate"></span><a href="<?php echo base_url()?>welcome/season/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="" style="color:#2e7d32;"> Kemarau (Mentari)</a>
                                     </td>
                                 </tr>
                                 <tr>

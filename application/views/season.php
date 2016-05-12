@@ -1,5 +1,6 @@
  <div class="col-sm-9 col-md-9">
             <div class="well">
+                <h6>No Result</h6>
                 <?php foreach ($d as $key) { 
         if ($key->kategori =='SEASON')
     {?>
@@ -21,6 +22,7 @@
                         </div>
                       </div>
                     </div>
+                    
      <?php } 
         } ?>
         </div>               

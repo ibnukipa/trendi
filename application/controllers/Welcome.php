@@ -52,6 +52,16 @@ class Welcome extends CI_Controller {
 	{
         $var['page']="";
         $var['d']=$this->Fashion_m->show_by_id($data);
+        
+        $this->load->model('item_m');
+        $var['i']=$this->item_m->show_all_item_fashion($data);
+        
+        $this->load->model('kain_m');
+        $var['k']=$this->kain_m->show_all_kain_fashion($data);
+        
+        $this->load->model('toko_m');
+        $var['t']=$this->toko_m->show_all_toko_fashion($data);
+        
         $this->load->view('layout/header_user', $var);
         $this->load->view('detail', $var);
         $this->load->view('layout/footer_user');

@@ -8,7 +8,7 @@
 				<div class="card large" style="width: 100%; height: 710px">
 					<div class="row" style="margin-bottom: 0">
 						<div class="col s4">
-							<img src="images/aa.png" style="width: 100%; padding-top:12%">
+							<img src="<?php echo base_url().$key->foto; ?>" style="width: 100%; padding-top:12%">
 						</div>
 						<div class="col s8" style="">
 							<div class="card-content">
@@ -71,41 +71,37 @@
 						</div>
 					</div>
 					<div class="col s12" style="text-align: left; margin-bottom: 10px">
-						<a style="color: #727272; margin-right: 0">INFO KAIN</a>
+						<a style="color: #727272; margin-right: 0">INFO ITEM</a>
 					</div>
 					<div class="col s12">
+                        <?php $c = 0; foreach($k as $kain){
+                            $c++;
+                        ?>
 						<div class="col s1">
-							<img class="icon_item" src="assets/img/baju.png" style="width: 100%">
+							<img class="icon_item" src="<?php echo base_url().$kain->foto; ?>" style="width: 100%">
 						</div>
-						<div class="col s1">
-							<img class="icon_item" src="assets/img/baju.png" style="width: 100%">
-						</div>
-						<div class="col s1">
-							<img class="icon_item" src="assets/img/baju.png" style="width: 100%">
-						</div>
-						<div class="col s1">
-							<img class="icon_item" src="assets/img/baju.png" style="width: 100%">
-						</div>
+                        
+                        <?php 
+                            }
+                            if($c == 0) echo "kosong";
+                        ?>
 					</div>
 					<div class="col s12" style="margin-top: 20px; text-align: left; margin-bottom: 10px">
 						<a style="color: #727272; margin-right: 0">INFO TOKO</a>
 					</div>
 					<div class="col s12">
-						<div class="col s3">
-							<img src="assets/img/tokopedia.png" style="width: 100%">
+						<?php $c = 0; foreach($t as $toko){
+                            $c++;
+                        ?>
+						<div class="col s1">
+							<img class="icon_item" src="<?php echo base_url().$toko->foto; ?>" style="width: 100%">
 						</div>
-						<div class="col s3">
-							<img src="assets/img/lazada.png" style="width: 100%">
-						</div>
-						<div class="col s3">
-							<img src="assets/img/bukalapak.png" style="width: 100%">
-						</div>
-						<div class="col s3">
-							<!-- <img class="icon_item" src="" style="width: 100%"> -->
-						</div>
+                        
+                        <?php 
+                            }
+                            if($c == 0) echo "No Available";
+                        ?>
 					</div>
-					<div class="card-action">
-					  <div class="chip">
 <!--
 					  	<img src="assets/img/male_tag.png" alt="Contact Person">
 					   
@@ -128,6 +124,7 @@
 			<div class="col s12">
 				<h4 style="margin-top: 30px; font-size: 20px"></h4>
 			</div>
+            <!--
 			<div class="col s6" id="female_1">
 				<div class="card medium" style="width: 100%">
 					<div class="row" style="margin-bottom: 0">
@@ -231,7 +228,7 @@
 					
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 <?php }  ?>
