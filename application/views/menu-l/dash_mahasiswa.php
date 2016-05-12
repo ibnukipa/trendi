@@ -56,7 +56,7 @@
         <div class="collapsible-body">
             <ul>
                 <li style="padding: 0">
-                    <div onclick="pendaftaran_proposal(this)" class="collapsible-header" style="border: none">
+                    <div onclick="mens_fash(this)" class="collapsible-header" style="border: none">
                         <a >
                             <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">people</i>
                             <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">play_circle_outline</i>
@@ -72,7 +72,7 @@
                     </div>
                 </li>
                 <li style="padding: 0">
-                    <div onclick="detail_proposal(this)" class="collapsible-header" style="border: none">
+                    <div onclick="women_fash(this)" class="collapsible-header" style="border: none">
                         <a >
                             <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">people</i>
                             <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">play_circle_outline</i>

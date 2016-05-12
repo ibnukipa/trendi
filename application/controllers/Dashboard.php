@@ -75,15 +75,59 @@ class Dashboard extends CI_Controller {
 
         $nama       = $this->input->post('deskripsi_fashion');
         $deskripsi  = $this->input->post('deskripsi_fashion');
-        $foto       = "upload/1.jpg";
+        
         $id_admin   = 1;
         $katgori    = $this->input->post('kategori');
         $genre      = $this->input->post('gender');
         
-        // if()
-        // echo json_encode($this->fashion_m->insert($nama, $deskripsi, $foto, $id_admin, $kategori, $genre);
-        // else
-            // echo json_encode("false");
+        $validextensions = array("jpeg", "jpg", "png");
+        $temporary = explode(".", $_FILES["file"]["name"]);
+        // $file_extension = end($temporary);
+
+        // echo json_encode($validextensions);
+
+    }
+
+    public function mens_fash_top() {
+        if(! $this->input->is_ajax_request()) {
+            redirect('notfound');
+        }
+        $data = $this->set_meta_data();
+
+        $data['path_']          = array( 0 => "Dashboard", 1 => "Men's Fashion" );
+        $data['path_icon']      = array( 0 => "dashboard", 1 => "");
+        $data['path_link']      = array( 0 => base_url() . "dashboard", 1 => "#" );
+        $this->load->view("status_bar_top", $data);
+    }
+
+    public function mens_fash_content() {
+        if(! $this->input->is_ajax_request()) {
+            redirect('notfound');
+        }
+        $data = $this->set_meta_data();
+
+        $this->load->view("no_result");
+    }
+
+    public function woman_fash_top() {
+        if(! $this->input->is_ajax_request()) {
+            redirect('notfound');
+        }
+        $data = $this->set_meta_data();
+
+        $data['path_']          = array( 0 => "Dashboard", 1 => "Women's Fashion" );
+        $data['path_icon']      = array( 0 => "dashboard", 1 => "");
+        $data['path_link']      = array( 0 => base_url() . "dashboard", 1 => "#" );
+        $this->load->view("status_bar_top", $data);
+    }
+
+    public function women_fash_content() {
+        if(! $this->input->is_ajax_request()) {
+            redirect('notfound');
+        }
+        $data = $this->set_meta_data();
+
+        $this->load->view("no_result");
     }
     
     public function new_fashion()
