@@ -60,45 +60,40 @@ class Dashboard extends CI_Controller {
             redirect('notfound');
         }
 
-        // $this->load->model('user_tl');
-
         $data = $this->set_meta_data();
-        // $data['mahasiswa_nama'] = $this->user_tl->get_nama_lengkap($_SESSION['username']);
         $data['mahasiswa_nrp']  = $_SESSION['username'];
-        $data['nama_formulir']  = "Post Baru";
+        $data['nama_formulir']  = "New Post";
         $data['id_form']        = "new_post";
         $this->load->view("form_new_post", $data);
     }
 
-    public function submit_proposal() {
+    public function submit_post() {
         if(! $this->input->is_ajax_request()) {
             redirect('notfound');
         }
         
-        $nilai_toefl       = $this->input->post('tofl');
-        $judul_proposal    = $this->input->post('judul_ta');
-
-
+        $nama_fashion       = $this->input->post('nama_fashion');
+        $foto_fashion       = $this->input->post('foto_fashion');
+        $deskripsi_fash     = $this->input->post('deskripsi_fashion');
+        $gender_fashion     = $this->input->post('gender');
     }
-
-    public function mahasiswa_detail_proposal_top() {
-        if(! $this->input->is_ajax_request()) {
-            redirect('notfound');
-        }
-        $data = $this->set_meta_data();
-
-        $data['path_']          = array( 0 => "Dashboard", 1 => "Detail" );
-        $data['path_icon']      = array( 0 => "dashboard", 1 => "");
-        $data['path_link']      = array( 0 => base_url() . "dashboard", 1 => "#" );
-        $this->load->view("status_bar_top", $data);
+    
+    public function new_fashion()
+    {
+        $this->load->view('form_post');
     }
-
-    public function mahasiswa_detail_proposal_content() {
-        if(! $this->input->is_ajax_request()) {
-            redirect('notfound');
-        }
-        $data = $this->set_meta_data();
-
-        $this->load->view("detail_proposal", $data);
+    
+    public function insert_fashion()
+    {
+        $nama = $this->input->post('nama');
+        $deskripsi = $this->input->post('deskripsi');
+        $foto = "upload/1.jpg";
+        $id_admin = 1;
+        $katgori = $this->input->post('kategori');
+        $genre = $this->input->post('genre');
+        
+        $this->load->model('fashion_m');
+        $this->fashion_m->insert($nama, $deskripsi, $foto, $id_admin, $kategori, $genre);
+        echo "berhasil";
     }
 }

@@ -39,7 +39,7 @@ function get_view_top(urlTarget, targetElem) {
 function submit_form(base_url, id_form) {
 	$.ajax({
 		type: "POST",
-		url: base_url + 'dashboard/submit_proposal',
+		url: base_url + 'dashboard/submit_post',
 		data: $("#" + id_form).serialize(),
 		dataType: 'json',
 		success: function(data){
