@@ -4,67 +4,7 @@
             Dashboard menu
         </div>
     </li>
-    <!-- <li>
-        <div class="collapsible-header">
-            <a style="color: <?php echo $warna_utama ?>" href="#!">
-                <i class="material-icons left">book</i>
-                <i class="material-icons hide-on-small-only right change_icon" style="margin: 0"></i>
-                <span style="font-weight: 500">Proposal TA</span>
-            </a>
-        </div>
-        <div class="collapsible-body">
-            <ul>
-                <li style="padding: 0">
-                    <div onclick="pendaftaran_proposal(this)" class="collapsible-header" style="border: none">
-                        <a >
-                            <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">note_add</i>
-                            <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">play_circle_outline</i>
-                            <span class="hide-on-small-only" style="vertical-align: middle; text-align: left; display: inline-block">
-                                <span style="display: block; position: relative; line-height: 1; font-size: 17px">
-                                Pendaftaran
-                                </span>
-                                <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 13px">
-                                Proposal TA
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </li>
-                <li style="padding: 0">
-                    <div onclick="detail_proposal(this)" class="collapsible-header" style="border: none">
-                        <a >
-                            <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">description</i>
-                            <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">play_circle_outline</i>
-                            <span class="hide-on-small-only" style="vertical-align: middle; text-align: left; display: inline-block">
-                                <span style="display: block; position: relative; line-height: 1; font-size: 17px">
-                                Detail
-                                </span>
-                                <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 13px">
-                                Proposal TA
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </li>
-                <li style="padding: 0">
-                    <div class="collapsible-header" style="border: none">
-                        <a style="color: <?php echo $warna_utama ?>" href="#!">
-                            <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">local_printshop</i>
-                            <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">play_circle_outline</i>
-                            <span class="hide-on-small-only" style="vertical-align: middle; text-align: left; display: inline-block">
-                                <span style="display: block; position: relative; line-height: 1; font-size: 17px">
-                                Cetak Cover
-                                </span>
-                                <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 13px">
-                                Proposal TA
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </li> -->
+    
 <!--     <li>
         <div class="collapsible-header">
             <a style="color: <?php echo $warna_utama ?>" href="#!">
@@ -105,8 +45,52 @@
             </a>
         </div>
     </li>
-
     <li>
+        <div class="collapsible-header">
+            <a style="color: <?php echo $warna_utama ?>" href="#!">
+                <i class="material-icons left">book</i>
+                <i class="material-icons hide-on-small-only right change_icon" style="margin: 0"></i>
+                <span style="font-weight: 500">List Fashion</span>
+            </a>
+        </div>
+        <div class="collapsible-body">
+            <ul>
+                <li style="padding: 0">
+                    <div onclick="pendaftaran_proposal(this)" class="collapsible-header" style="border: none">
+                        <a >
+                            <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">people</i>
+                            <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">play_circle_outline</i>
+                            <span class="hide-on-small-only" style="vertical-align: middle; text-align: left; display: inline-block">
+                                <span style="display: block; position: relative; line-height: 1; font-size: 17px">
+                                Man's
+                                </span>
+                                <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 13px">
+                                Fashion
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li style="padding: 0">
+                    <div onclick="detail_proposal(this)" class="collapsible-header" style="border: none">
+                        <a >
+                            <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">people</i>
+                            <i class="material-icons hide-on-small-only right detail" style="font-size: 1rem; margin: 0; position: absolute;">play_circle_outline</i>
+                            <span class="hide-on-small-only" style="vertical-align: middle; text-align: left; display: inline-block">
+                                <span style="display: block; position: relative; line-height: 1; font-size: 17px">
+                                Women's
+                                </span>
+                                <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 13px">
+                                Fashion
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </li>
+    <!-- <li>
         <div class="collapsible-header" style="border: none">
             <a style="color: <?php echo $warna_utama ?>" href="#!">
                 <i class="material-icons left" style="color: <?php echo $warna_ketiga ?>; font-size: 1.4rem">import_contacts</i>
@@ -115,12 +99,12 @@
                     <span style="display: block; position: relative; line-height: 1; font-size: 15px; font-weight: 500">
                     List Post
                     </span>
-                    <!-- <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 15px">
+                    <span style="opacity: .5; text-align: left; display: block; position: relative; line-height: 1; font-size: 15px">
                     Proposal TA
-                    </span> -->
+                    </span>
                 </span>
             </a>
         </div>
-    </li>
+    </li> -->
     
 </ul>

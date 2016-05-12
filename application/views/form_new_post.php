@@ -26,22 +26,22 @@
 		</div>
 		<div class="col s12" style="margin-bottom: 10px">
 			<p>
-			<input name="group1" type="radio" id="test1" />
+			<input name="gender" type="radio" id="test1" />
 			<label for="test1">Male</label>
 		</p>
 		<p>
-			<input name="group1" type="radio" id="test2" />
+			<input name="gender" type="radio" id="test2" />
 			<label for="test2">Female</label>
 		</p>
 		</div>
 
-		<div class="col s12" style="text-align: center;">
+		<!-- <div class="col s12" style="text-align: center;"> -->
 			<!-- <ul class=""> -->
-				<a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Item</a>
+				<!-- <a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Item</a>
 				<a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Kain</a>
-				<a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Toko</a>
+				<a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Toko</a> -->
 	        <!-- </ul> -->
-		</div>
+		<!-- </div> -->
 	</div>
 </form>
 <div class="row" style="margin: 20px 0">
