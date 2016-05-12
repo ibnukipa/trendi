@@ -27,11 +27,11 @@
 		<div class="col s12" style="margin-bottom: 10px">
         <label for="deskripsi_fashion" class="active">Gender</label>
 			<p>
-			<input name="gender" type="radio" id="test1" />
+			<input value="MALE" name="gender" type="radio" id="test1" />
 			<label for="test1">Male</label>
 		</p>
 		<p>
-			<input name="gender" type="radio" id="test2" />
+			<input value="FEMALE" name="gender" type="radio" id="test2" />
 			<label for="test2">Female</label>
 		</p>
 		</div>
