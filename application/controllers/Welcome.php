@@ -16,10 +16,11 @@ class Welcome extends CI_Controller {
     public function home($data)
 	{
         $this->session->set_userdata('genre',$data);
-       
+        $var['page']="trend";
             $var['d']=$this->Fashion_m->show_all($data);
+            $var['e']=$data;
             //echo $data;
-            $this->load->view('layout/header_user');
+            $this->load->view('layout/header_user', $var);
             $this->load->view('home',$var);
             $this->load->view('layout/footer_user');
        
@@ -28,8 +29,9 @@ class Welcome extends CI_Controller {
     public function season($data)
 	{
         $this->session->set_userdata('genre',$data);
+        $var['page']="session";
         $var['d']=$this->Fashion_m->show_all($data);
-        $this->load->view('layout/header_user');
+        $this->load->view('layout/header_user', $var);
         $this->load->view('layout/sidebar');
         $this->load->view('season',$var);
         $this->load->view('layout/footer_user');
