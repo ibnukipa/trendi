@@ -41,13 +41,23 @@ function new_post(caller) {
 	get_view(urlTarget, "#content");
 }
 
-function detail_proposal(caller) {
+function mens_fash(caller) {
 	select_this(caller);
 	
-	var urlTarget 	= '<?php echo base_url(); ?>dashboard/mahasiswa_detail_proposal_top';
+	var urlTarget 	= '<?php echo base_url(); ?>dashboard/mens_fash_top';
 	get_view_top(urlTarget, ".status-content");
 
-	urlTarget = '<?php echo base_url(); ?>dashboard/mahasiswa_detail_proposal_content';
+	urlTarget = '<?php echo base_url(); ?>dashboard/mens_fash_content';
+	get_view(urlTarget, "#content");
+}
+
+function women_fash(caller) {
+	select_this(caller);
+	
+	var urlTarget 	= '<?php echo base_url(); ?>dashboard/woman_fash_top';
+	get_view_top(urlTarget, ".status-content");
+
+	urlTarget = '<?php echo base_url(); ?>dashboard/mens_fash_content';
 	get_view(urlTarget, "#content");
 }
 

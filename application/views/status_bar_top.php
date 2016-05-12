@@ -19,9 +19,9 @@
 		<!-- <span style="color: white; vertical-align: middle; font-size: 15px; font-weight: 700">
         		Status TA :
         </span> -->
-		<i class="material-icons" style="vertical-align: middle; font-size: 20px">notifications</i>
+		<!-- <i class="material-icons" style="vertical-align: middle; font-size: 20px">notifications</i>
 		<span style="vertical-align: middle; font-size: 13px;">
         	4
-        </span>
+        </span> -->
 	</div>
 </div>

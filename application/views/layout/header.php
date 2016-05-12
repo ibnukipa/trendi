@@ -76,12 +76,12 @@
                                 <span>Dashboard</span>
                             </a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a style="color: <?php echo $warna_utama ?>" href="#!">
                                 <i class="material-icons left">account_circle</i>
                                 <span>Profile</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="divider"></li>
                         <li>
                             <a style="color: <?php echo $warna_utama ?>" href="<?php echo base_url(); ?>login/logout">
