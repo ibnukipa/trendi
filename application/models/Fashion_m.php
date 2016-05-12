@@ -50,6 +50,13 @@ Class Fashion_m extends CI_Model{
         $data = $query_->result();
         return $data;
     }
+    
+    public function show_by_kategori($kategori)
+    {
+        $query_ = $this->db->query("select * from fashion where kategori = '$kategori'");
+        $data = $query_->result();
+        return $data;
+    }
 }
     
 ?>
