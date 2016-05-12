@@ -11,7 +11,7 @@
 							<div class="card-content">
 								<div class="row">
 									<div class="col s12" style="padding-bottom: 20px">
-							  			<h5 style="color:#f57c00;">NAMA FASHION</h5>
+							  			<h5 style="color:#f57c00;"><?php echo $key->nama ?></h5>
 							  		</div>
 							  		<div class="col s12">
 							  			<div class="col s2" style="padding-left: 0">
@@ -54,7 +54,7 @@
 							  			</div>
 							  		</div>
 							  		<div class="col s12" style="padding-top: 20px">
-							  			<p style="text-align: justify">Merupakan baju yang asdhjklertyuiopzxcvbnm,1234567890-.</p>
+							  			<p style="text-align: justify"><?php echo $key->deskripsi ?></p>
 							  		</div>
 							  	</div>
 							</div>
@@ -91,13 +91,12 @@
 							<img src="assets/img/bukalapak.png" style="width: 100%">
 						</div>
 						<div class="col s3">
-							<!-- <img class="icon_item" src="<?php echo base_url()?>assets/img/baju.png" style="width: 100%"> -->
+							<!-- <img class="icon_item" src="" style="width: 100%"> -->
 						</div>
 					</div>
 					<div class="card-action">
 					  <div class="chip">
 					  	<img src="assets/img/male_tag.png" alt="Contact Person">
-					    <?php echo $jenis_fashion; ?>
 					  </div>
 					  <span><a class="waves-effect btn-flat" style="color: #727272; margin-right: 0"><i class="material-icons left">date_range</i>28-03-2016</a></span>
 						<span class="star-rating right" style="margin-right: 20px;">

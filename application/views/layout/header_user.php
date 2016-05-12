@@ -45,8 +45,9 @@
 <div id="header">
 	<div id="menu" class="container">
 		<ul>
-			<li class="current_page_item"><a href="<?php echo base_url()?>welcome/home" accesskey="1" title="">Trend</a></li>
-			<li><a href="<?php echo base_url()?>welcome/season" accesskey="1" title="">Season</a></li>
+			<li class="current_page_item"><a href="<?php echo base_url()?>welcome/home/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Trend</a>
+            </li>
+			<li><a href="<?php echo base_url()?>welcome/season/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Season</a></li>
 			<li><a href="#" accesskey="2" title="">Event</a></li>
 			<li><a href="#" accesskey="3" title="">Accessories</a></li>
 			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
