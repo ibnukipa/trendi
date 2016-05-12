@@ -56,6 +56,15 @@ class Welcome extends CI_Controller {
         $this->load->view('detail', $var);
         $this->load->view('layout/footer_user');
 	}
+    
+    public function contact($data)
+	{
+        $this->session->set_userdata('genre',$data);
+        $var['page']="contact";
+        $this->load->view('layout/header_user', $var);
+        $this->load->view('contact',$var);
+        $this->load->view('layout/footer_user');
+	}
 }
     
     

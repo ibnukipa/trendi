@@ -50,7 +50,7 @@
 			<li <?php if($page == "session") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/season/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Season</a></li>
 			<li <?php if($page == "event") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/event/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Event</a></li>
 <!--			<li><a href="#" accesskey="3" title="">Accessories</a></li>-->
-			<li><a href="#" accesskey="5" title="">Contact Us</a></li>
+			<li <?php if($page == "contact") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/contact/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">About Us</a></li>
 		</ul>
 	</div>
 </div>
