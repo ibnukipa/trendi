@@ -26,6 +26,19 @@ class Welcome extends CI_Controller {
        
 	}
     
+    public function category($jenis,$data)
+	{
+        $this->session->set_userdata('genre',$data);
+        $var['page']="category";
+            $var['d']=$this->Fashion_m->show_all($data);
+            $var['e']=$data;
+            //echo $data;
+            $this->load->view('layout/header_user', $var);
+            $this->load->view('category',$var);
+            $this->load->view('layout/footer_user');
+       
+	}
+    
     public function season($data)
 	{
         $this->session->set_userdata('genre',$data);
@@ -73,6 +86,15 @@ class Welcome extends CI_Controller {
         $var['page']="contact";
         $this->load->view('layout/header_user', $var);
         $this->load->view('contact',$var);
+        $this->load->view('layout/footer_user');
+	}
+    
+    public function about($data)
+	{
+        $this->session->set_userdata('genre',$data);
+        $var['page']="about";
+        $this->load->view('layout/header_user', $var);
+        $this->load->view('about',$var);
         $this->load->view('layout/footer_user');
 	}
 }

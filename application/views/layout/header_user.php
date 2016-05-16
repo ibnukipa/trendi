@@ -12,14 +12,16 @@
 <!--
 <link href="bootstrap.min.css" rel="stylesheet" media="all"/>
 <link href="bootstrap.css" rel="stylesheet" media="all"/>
--->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+<link href="<?php echo base_url()?>assets/css/materialize.css" rel="stylesheet" type="text/css" media="all" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+<script language="JavaScript" type="text/javascript" src="<?php echo base_url()?>assets/js/materialize.js"></script>
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>-->
 
 <link rel="icon" href="<?php echo base_url(); ?>assets/img/favicon.png" type="image/png">
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
@@ -29,11 +31,11 @@
 <body style="background: #EFEFEF url(<?php echo base_url()?>assets/img/bg01.png) repeat;">
     
 <section>
-	<div class="kotak-m tooltipped" data-position="right" data-delay="50" data-tooltip="Male's Fashion">
-		  <a href="<?php echo base_url()?>welcome/home/male"><img src="<?php echo base_url()?>assets/img/male_white.png" style=""></a>
+	<div class="kotak-f tooltipped" data-position="right" data-delay="50" data-tooltip="Female's Fashion">
+		  <a href="<?php echo base_url()?>welcome/home/female"><img src="<?php echo base_url()?>assets/img/female_white.png" style=""></a>
 	</div>
-	<div class="kotak-f tooltipped" style="top: 20%; right: 0" data-position="left" data-delay="50" data-tooltip="Female's Fashion">
-        <a href="<?php echo base_url()?>welcome/home/female"><img src="<?php echo base_url()?>assets/img/female_white.png" style=""></a>
+	<div class="kotak-m tooltipped" style="top: 12%; right: 0" data-position="left" data-delay="50" data-tooltip="Male's Fashion">
+        <a href="<?php echo base_url()?>welcome/home/male"><img src="<?php echo base_url()?>assets/img/male_white.png" style=""></a>
 	</div>
 </section>    
     
@@ -47,10 +49,27 @@
 		<ul>
 			<li <?php if($page == "trend") { ?> class="current_page_item" <?php } ?> >  <a href="<?php echo base_url()?>welcome/home/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Trend</a>
             </li>
-			<li <?php if($page == "session") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/season/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Season</a></li>
-			<li <?php if($page == "event") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/event/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Event</a></li>
+			<li <?php if($page == "category") { ?> style="background: #7BDB99;" <?php } ?> ><a href="" accesskey="1" title="">Category</a>
+            
+            <div class="dropdown_3columns align_left"><!-- Begin 3 columns container -->
+	            <div class="col_5">
+	                <div class="col_2">
+	                <h2>by SEASON</h2>
+	                <p><a href="<?php echo base_url()?>welcome/category/kemarau/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Kemarau</a></p>
+	                <p><a href="#" accesskey="5" title="">Hujan</a></p>
+	            	</div>
+	            	<div class="col_2">
+	                <h2>by EVENTS</h2>
+	                <p><a href="#" accesskey="5" title="">Hang Out</a></p>
+	                <p><a href="#" accesskey="5" title="">Party</a></p>
+	                <p><a href="#" accesskey="5" title="">Hiking</a></p>
+	            </div>
+	            </div>
+        	</div>
+            </li>
+			<li <?php if($page == "about") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/about/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">About Us</a></li>
 <!--			<li><a href="#" accesskey="3" title="">Accessories</a></li>-->
-			<li <?php if($page == "contact") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/contact/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">About Us</a></li>
+			<li <?php if($page == "contact") { ?> class="current_page_item" <?php } ?> ><a href="<?php echo base_url()?>welcome/contact/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Contact Us</a></li>
 		</ul>
 	</div>
 </div>
