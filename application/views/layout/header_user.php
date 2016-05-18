@@ -9,7 +9,9 @@
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Open+Sans:400,300,600,700,800" rel="stylesheet" />
 <link href="<?php echo base_url()?>assets/css/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo base_url()?>assets/font/fonts.css" rel="stylesheet" type="text/css" media="all" />
-<!--
+
+<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+ --><!--
 <link href="bootstrap.min.css" rel="stylesheet" media="all"/>
 <link href="bootstrap.css" rel="stylesheet" media="all"/>
 
