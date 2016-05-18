@@ -29,7 +29,7 @@
 </head>
 
 <body style="background: #EFEFEF url(<?php echo base_url()?>assets/img/bg01.png) repeat;">
-    
+
 <section>
 	<div class="kotak-f tooltipped" data-position="right" data-delay="50" data-tooltip="Female's Fashion">
 		  <a href="<?php echo base_url()?>welcome/home/female"><img src="<?php echo base_url()?>assets/img/female_white.png" style=""></a>
@@ -37,9 +37,9 @@
 	<div class="kotak-m tooltipped" style="top: 12%; right: 0" data-position="left" data-delay="50" data-tooltip="Male's Fashion">
         <a href="<?php echo base_url()?>welcome/home/male"><img src="<?php echo base_url()?>assets/img/male_white.png" style=""></a>
 	</div>
-</section>    
-    
-    
+</section>
+
+
 <div id="logo" class="container">
 	<a href="<?php echo base_url()?>welcome"><img src="<?php echo base_url()?>assets/img/trendy.png" height="100" alt=""/></a>
 	<!--<h1><a href="#" class="icon icon-spinner"><span>SquareAway</span></a></h1>-->
@@ -50,19 +50,19 @@
 			<li <?php if($page == "trend") { ?> class="current_page_item" <?php } ?> >  <a href="<?php echo base_url()?>welcome/home/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Trend</a>
             </li>
 			<li <?php if($page == "category") { ?> style="background: #7BDB99;" <?php } ?> ><a href="" accesskey="1" title="">Category</a>
-            
+
             <div class="dropdown_3columns align_left"><!-- Begin 3 columns container -->
 	            <div class="col_5">
 	                <div class="col_2">
 	                <h2>by SEASON</h2>
 	                <p><a href="<?php echo base_url()?>welcome/category/kemarau/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Kemarau</a></p>
-	                <p><a href="#" accesskey="5" title="">Hujan</a></p>
+	                <p><a href="<?php echo base_url()?>welcome/category/hujan/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Hujan</a></p>
 	            	</div>
 	            	<div class="col_2">
 	                <h2>by EVENTS</h2>
-	                <p><a href="#" accesskey="5" title="">Hang Out</a></p>
-	                <p><a href="#" accesskey="5" title="">Party</a></p>
-	                <p><a href="#" accesskey="5" title="">Hiking</a></p>
+	                <p><a href="<?php echo base_url()?>welcome/category/hang_out/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Hang Out</a></p>
+	                <p><a href="<?php echo base_url()?>welcome/category/party/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Party</a></p>
+	                <p><a href="<?php echo base_url()?>welcome/category/hiking/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Hiking</a></p>
 	            </div>
 	            </div>
         	</div>
@@ -73,3 +73,4 @@
 		</ul>
 	</div>
 </div>
+<?php //echo "$f - $e"; ?>
