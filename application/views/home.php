@@ -62,9 +62,6 @@
                         </span>
                         </div>
                         <div class="card-action">
-                          <a href="<?php echo base_url()?>welcome/detail/<?php echo $key->id ?>" style="color:#1b5e20;">Readmore</a>
-                        </div>
-                        <div class="card-action">
                             <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="#modal1">READ MORE</a>
                         </div>
                       </div>
@@ -95,7 +92,7 @@
                         </span>
                         </div>
                         <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="#modal1">READ MORE</a>
                         </div>
                       </div>
                 </div>
@@ -122,7 +119,7 @@
                         </span>
                         </div>
                         <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="#modal1">READ MORE</a>
                         </div>
                       </div>
                 </div>
@@ -150,7 +147,7 @@
                         </span>
                         </div>
                         <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="#modal1">READ MORE</a>
                         </div>
                       </div>
                 </div>
@@ -179,7 +176,7 @@
                         </span>
                         </div>
                         <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="#modal1">READ MORE</a>
                         </div>
                       </div>
                 </div>
@@ -264,50 +261,7 @@
                             <span style="text-align: left; color:#9e9e9e"><?php echo $key->tanggal ?></span>
                                         <br>
                     </div>
-<!--
-                    <div class="col s12">
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/baju.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/sepatu.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/topi.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/kaca.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/topi.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/kaca.png" style="width: 100%">
-                      </div>
-                    </div>
--->
-<!--
-                    <div class="col s12" style="padding-top: 1%">
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/baju.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/sepatu.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/topi.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/kaca.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/topi.png" style="width: 100%">
-                      </div>
-                      <div class="col s2" style="padding-left: 0">
-                        <img class="icon_item" src="assets/img/kaca.png" style="width: 100%">
-                      </div>
-                    </div>
--->
+
                     <div class="col s12" style="padding-top: 20px">
                       <p style="text-align: justify"><?php echo $key->deskripsi ?></h5></p>
                     </div>
