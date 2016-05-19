@@ -60,10 +60,17 @@ Class Fashion_m extends CI_Model{
 
     public function show_by_kategori($kategori, $gender)
     {
-        $query_ = $this->db->query("select * from fashion, fashion_kategori, kategori where kategori = '$kategori' and genre='$gender'
-                                  and id_k = id_kategori and id_fashion = id");
+        $query_ = $this->db->query("SELECT * FROM fashion, fashion_kategori, kategori WHERE nama_kategori = '$kategori' AND genre='$gender'
+                                  AND id_k = id_kategori AND id_fashion = id");
         $data = $query_->result();
         return $data;
+    }
+
+    public function jumlah_fashion($g)
+    {
+      $query_ = $this->db->query("select count(*) as jumlah from fashion where genre = '$g'");
+      $data = $query_->result();
+      return $data;
     }
 }
 

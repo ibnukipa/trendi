@@ -61,92 +61,30 @@
                     </div>
      <?php }  ?>
 
-				<!-- <div class="col s4">
-                      <div class="card">
-                        <div class="card-image">
-                          <img src="<?php echo base_url()?>assets/img/aa.png" style="width:100%" alt="" class="img-rounded"/>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title" style="color:#f57c00;">Card Title</span>
-                          <p>Elegant ft Casual</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col s4">
-                      <div class="card">
-                        <div class="card-image">
-                          <img src="<?php echo base_url()?>assets/img/produk2.jpg" style="width:100%" alt="" class="img-rounded"/>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title" style="color:#f57c00;">Card Title</span>
-                          <p>Elegant ft Casual</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col s4">
-                      <div class="card">
-                        <div class="card-image">
-                          <img src="<?php echo base_url()?>assets/img/favorite.jpg" style="width:100%" alt="" class="img-rounded"/>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title" style="color:#f57c00;">Card Title</span>
-                          <p>Elegant ft Casual</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col s4">
-                      <div class="card">
-                        <div class="card-image">
-                          <img src="<?php echo base_url()?>assets/img/favorite.jpg" style="width:100%" alt="" class="img-rounded"/>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title" style="color:#f57c00;">Card Title</span>
-                          <p>Elegant ft Casual</p>
-                        </div>
-                        <div class="card-action">
-                          <a href="indexdetail.html" style="color:#1b5e20;">Readmore</a>
-                        </div>
-                      </div>
-                </div>
-
-                <div class="col s4">
-                      <div class="card">
-                        <div class="card-image">
-                          <img src="<?php echo base_url()?>assets/img/produk2.jpg" style="width:100%" alt="" class="img-rounded"/>
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title" style="color:#f57c00;">Card Title</span>
-                          <p>Elegant ft Casual</p>
-                        </div>
-                        <div class="card-action">
-                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="#modal1">READ MORE</a>
-                        </div>
-                      </div>
-                </div> -->
-                <div class="col s12">
-                <ul class="pagination" style="text-align:center;">
-				    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-				    <li class="active"><a href="#!">1</a></li>
-				    <li class="waves-effect"><a href="#!">2</a></li>
-				    <li class="waves-effect"><a href="#!">3</a></li>
-				    <li class="waves-effect"><a href="#!">4</a></li>
-				    <li class="waves-effect"><a href="#!">5</a></li>
-				    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-				 </ul>
-                    </div>
-			</div>
-		</div>
-	</div>
+		 <div class="col s12">
+			 <ul class="pagination" style="text-align:center;">
+				 <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+				 <?php
+				 foreach ($jumlah as $jum) {
+				 	$jumjum = $jum->jumlah;
+				 }
+				 $halaman = ceil($jumjum/9);
+				  for($i = 1; $i<=$halaman; $i++){
+				 $na = ($i-1)*9;
+				 ?>
+				 <li class="waves-effect"><a href="<?php echo base_url(); echo "welcome/home/".$e."/"; echo $na."/9"; ?>"><?php echo $i ?></a></li>
+				 <?php } ?>
+				 <!-- <li class="active"><a href="#!">1</a></li>
+				 <li class="waves-effect"><a href="#!">2</a></li>
+				 <li class="waves-effect"><a href="#!">3</a></li>
+				 <li class="waves-effect"><a href="#!">4</a></li>
+				 <li class="waves-effect"><a href="#!">5</a></li> -->
+				 <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+			 </ul>
+		 </div>
+	 </div>
+ </div>
+</div>
 
 
 	<script>

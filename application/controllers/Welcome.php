@@ -18,6 +18,7 @@ class Welcome extends CI_Controller {
         $this->session->set_userdata('genre',$data);
         $var['page']="trend";
             $var['d']=$this->Fashion_m->show_all_by_gender($data, $awal, $akhir);
+            $var['jumlah'] = $this->Fashion_m->jumlah_fashion($data);
             $var['e']=$data;
 
             $this->load->model('kain_m');
@@ -41,6 +42,7 @@ class Welcome extends CI_Controller {
         $this->session->set_userdata('genre',$data);
         $var['page']="category";
             $var['d']=$this->Fashion_m->show_by_kategori($jenis, $data);
+            $var['jumlah'] = $this->Fashion_m->jumlah_fashion($data);
             $var['e']=$data;
             $var['f']=$jenis;
             //echo $data;

@@ -34,10 +34,10 @@
 
 <section>
 	<div class="kotak-f tooltipped" data-position="right" data-delay="50" data-tooltip="Female's Fashion">
-		  <a href="<?php echo base_url()?>welcome/home/female"><img src="<?php echo base_url()?>assets/img/female_white.png" style=""></a>
+		  <a href="<?php echo base_url()?>welcome/home/female/0/9"><img src="<?php echo base_url()?>assets/img/female_white.png" style=""></a>
 	</div>
 	<div class="kotak-m tooltipped" style="top: 12%; right: 0" data-position="left" data-delay="50" data-tooltip="Male's Fashion">
-        <a href="<?php echo base_url()?>welcome/home/male"><img src="<?php echo base_url()?>assets/img/male_white.png" style=""></a>
+        <a href="<?php echo base_url()?>welcome/home/male/0/9"><img src="<?php echo base_url()?>assets/img/male_white.png" style=""></a>
 	</div>
 </section>
 
@@ -49,7 +49,7 @@
 <div id="header">
 	<div id="menu" class="container">
 		<ul>
-			<li <?php if($page == "trend") { ?> class="current_page_item" <?php } ?> >  <a href="<?php echo base_url()?>welcome/home/<?php echo $this->session->userdata('genre') ?>" accesskey="1" title="">Trend</a>
+			<li <?php if($page == "trend") { ?> class="current_page_item" <?php } ?> >  <a href="<?php echo base_url()?>welcome/home/<?php echo $this->session->userdata('genre') ?>/0/9" accesskey="1" title="">Trend</a>
             </li>
 			<li <?php if($page == "category") { ?> style="background: #7BDB99;" <?php } ?> ><a href="" accesskey="1" title="">Category</a>
 
