@@ -552,8 +552,8 @@
             <div class="col s1">
               <img class="icon_item" src="<?php echo base_url().$kain->foto; ?>" style="width: 100%">
             </div>
-                        
-                        <?php 
+
+                        <?php
                             }
                             if($c == 0) echo "kosong";
                         ?>
@@ -568,8 +568,8 @@
             <div class="col s1">
               <img class="icon_item" src="<?php echo base_url().$toko->foto; ?>" style="width: 100%">
             </div>
-                        
-                        <?php 
+
+                        <?php
                             }
                             if($c == 0) echo "No Available";
                         ?>
@@ -586,12 +586,12 @@
         </div>
       </div>
       <div class="card-action">
-    
+
       </div>
       <div class="col s12">
         <h4 style="margin-top: 30px; font-size: 20px"></h4>
       </div>
-  
+
     </div>
 <?php }  ?>
     <div class="modal-footer">
