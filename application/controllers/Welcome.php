@@ -19,6 +19,16 @@ class Welcome extends CI_Controller {
         $var['page']="trend";
             $var['d']=$this->Fashion_m->show_all_by_gender($data);
             $var['e']=$data;
+
+            $this->load->model('kain_m');
+            $var['kain'] = $this->kain_m->show_all_kain();
+
+            $this->load->model('toko_m');
+            $var['toko'] = $this->toko_m->show_all_toko();
+
+            $this->load->model('item_m');
+            $var['item'] = $this->item_m->show_all_item();
+
             //echo $data;
             $this->load->view('layout/header_user', $var);
             $this->load->view('home',$var);
@@ -34,8 +44,21 @@ class Welcome extends CI_Controller {
             $var['e']=$data;
             $var['f']=$jenis;
             //echo $data;
+            // $this->load->view('layout/header_user', $var);
+            // $this->load->view('category',$var);
+            // $this->load->view('layout/footer_user');
+            $this->load->model('kain_m');
+            $var['kain'] = $this->kain_m->show_all_kain();
+
+            $this->load->model('toko_m');
+            $var['toko'] = $this->toko_m->show_all_toko();
+
+            $this->load->model('item_m');
+            $var['item'] = $this->item_m->show_all_item();
+
+            //echo $data;
             $this->load->view('layout/header_user', $var);
-            $this->load->view('category',$var);
+            $this->load->view('home',$var);
             $this->load->view('layout/footer_user');
 
 	}
