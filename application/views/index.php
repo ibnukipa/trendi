@@ -21,10 +21,10 @@
 </div>
 <div id="page-wrappera">
 <!--	<div id="banner" class="container"><a href="#"><img src="images/pic06.jpg" width="1200" height="300" alt="" /></a></div>-->
-    <div id="banner" class="col-lg-3 "><a href="<?php echo base_url()?>welcome/home/female"><img src="<?php echo base_url()?>assets/img/aa.png" style="width:100%" alt="" /></a></div>
-    <div id="banner" class="col-lg-3 "><a href="<?php echo base_url()?>welcome/home/female"><img src="<?php echo base_url()?>assets/img/ca.png" style="width:100%"  alt="" /></a></div>
-    <div id="banner" class="col-lg-3"><a href="<?php echo base_url()?>welcome/home/male"><img src="<?php echo base_url()?>assets/img/da.png" style="width:100%"  alt="" /></a></div>
-    <div id="banner" class="col-lg-3 "><a href="<?php echo base_url()?>welcome/home/male"><img src="<?php echo base_url()?>assets/img/ba.png" style="width:100%" alt="" /></a></div>
+    <div id="banner" class="col-lg-3 "><a href="<?php echo base_url()?>welcome/home/female/0/9"><img src="<?php echo base_url()?>assets/img/aa.png" style="width:100%" alt="" /></a></div>
+    <div id="banner" class="col-lg-3 "><a href="<?php echo base_url()?>welcome/home/female/0/9"><img src="<?php echo base_url()?>assets/img/ca.png" style="width:100%"  alt="" /></a></div>
+    <div id="banner" class="col-lg-3"><a href="<?php echo base_url()?>welcome/home/male/0/9"><img src="<?php echo base_url()?>assets/img/da.png" style="width:100%"  alt="" /></a></div>
+    <div id="banner" class="col-lg-3 "><a href="<?php echo base_url()?>welcome/home/male/0/9"><img src="<?php echo base_url()?>assets/img/ba.png" style="width:100%" alt="" /></a></div>
 </div>
 <div id="copyright">
 	<p>&copy; Trendy. All rights reserved. | Photos by <a href="http://fotogrph.com/">Trendy Corp</a></p>

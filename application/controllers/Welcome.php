@@ -13,11 +13,11 @@ class Welcome extends CI_Controller {
         $this->load->view("index");
     }
 
-    public function home($data)
+    public function home($data, $awal, $akhir)
 	{
         $this->session->set_userdata('genre',$data);
         $var['page']="trend";
-            $var['d']=$this->Fashion_m->show_all_by_gender($data);
+            $var['d']=$this->Fashion_m->show_all_by_gender($data, $awal, $akhir);
             $var['e']=$data;
 
             $this->load->model('kain_m');

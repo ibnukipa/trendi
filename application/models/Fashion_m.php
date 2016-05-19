@@ -43,9 +43,9 @@ Class Fashion_m extends CI_Model{
     }
 
     //show list all fashion by gender
-    public function show_all_by_gender($g)
+    public function show_all_by_gender($g, $awal, $akhir)
     {
-        $query_ = $this->db->query("select * from fashion where show_ = 1 and genre = '$g'");
+        $query_ = $this->db->query("select * from fashion where show_ = 1 and genre = '$g' order by id asc limit $awal,$akhir");
         $data = $query_->result();
         return $data;
     }
