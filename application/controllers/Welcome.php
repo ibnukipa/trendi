@@ -60,7 +60,12 @@ class Welcome extends CI_Controller {
 
             //echo $data;
             $this->load->view('layout/header_user', $var);
-            $this->load->view('home',$var);
+            if ($jenis == 'lebaran') {
+                $this->load->view('lebaran',$var);
+            }
+            else if ($jenis == 'kemarau') {
+                $this->load->view('kemarau',$var);
+            }
             $this->load->view('layout/footer_user');
 
 	}

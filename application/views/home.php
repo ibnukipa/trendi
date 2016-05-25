@@ -6,17 +6,17 @@
 					 <div class="slider">
 					    <ul class="slides">
 					      <li>
-					        <img src="http://www.styleclickcity.com/wp-content/uploads/2014/09/DenimFashion.Styleclickcity.com_.jpg"> <!-- random image -->
-					        <div class="caption center-align">
-					          <h3>This is our big Tagline!</h3>
-					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					        <img src="http://spirit.web.id/wp-content/uploads/2015/09/Model-Gamis-Terbaru.jpg"> <!-- random image -->
+					        <div class="caption right-align">
+					          <h3>Have you find your gamis for lebaran?</a></h3>
+	
 					        </div>
 					      </li>
 					      <li>
-					        <img src="<?php echo base_url()?>assets/img/ea.jpg"> <!-- random image -->
+					        <img src="http://fashionovert.com/wp-content/uploads/2015/11/Calibre-Clothing-for-Men-Summer-Fresh-with-Pictures-of-Fashion-Clothes-Styles-Latest-on-Gallery.jpg"> <!-- random image -->
 					        <div class="caption left-align">
-					          <h3>Left Aligned Caption</h3>
-					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					          <h3>Ready for Kemarau's clothe</h3>
+					          <h5>Find it Now!</h5>
 					        </div>
 					      </li>
 					      <li>
@@ -27,10 +27,10 @@
 					        </div>
 					      </li>
 					      <li>
-					        <img src="http://cdn1.theodysseyonline.com/files/2016/01/27/635894576889786368-2047180225_aptopix-fashion-theyskens-theory-fall-2012-backstage.jpg"> <!-- random image -->
-					        <div class="caption center-align">
-					          <h3>This is our big Tagline!</h3>
-					          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					        <img src="http://www.karita-indonesia.com/upload/images/berita/img_8mkXvcTTt8.JPG"> <!-- random image -->
+					        <div class="caption right-align">
+					          <h3>Have you find your gamis for Eid?</a></h3>
+					        
 					        </div>
 					      </li>
 					    </ul>
@@ -60,6 +60,145 @@
                       </div>
                     </div>
      <?php }  ?>
+
+     	<?php if ($this->session->userdata('genre')=='female') { ?>
+     	<div class="col s4">
+                      <div class="card">
+                        <div class="card-image">
+               <!--            <img class="materialboxed" width="650" src="<?php echo base_url() . $key->foto ?>"> -->
+                          <img src="http://3.bp.blogspot.com/-GJMkV3CgV9s/VHZ9ndUmVnI/AAAAAAAAACE/qkLZWVzV6Rg/s1600/baju%252Bgamis%252Bterbaru.jpg" style="width:100%" alt="" class="img-rounded"/>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title" style="color:#f57c00;">Blue Gamis</span>
+                            <br>
+                            <span style="text-align: left; color:#9e9e9e">25/5/2016</span>
+														<?php $des = substr('Bagi kamu yang suka warna biru, ini cocok nih buat kamu', 0, 10) ?>
+                          <p><?php echo "$des ..."; ?></p>
+                        </div>
+                        <!-- <div class="card-action">
+                          <a href="<?php echo base_url()?>welcome/detail/<?php echo $key->id ?>" style="color:#1b5e20;">Readmore</a>
+                        </div> -->
+                        <div class="card-action">
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="">READ MORE</a>
+                        </div>
+                      </div>
+                    </div>
+
+        <div class="col s4">
+                      <div class="card">
+                        <div class="card-image">
+               <!--            <img class="materialboxed" width="650" src="<?php echo base_url() . $key->foto ?>"> -->
+                          <img src="http://modelbatikterbaru.com/wp-content/uploads/2015/12/Model-Batik-Gamis-Modern.png" style="width:100%" alt="" class="img-rounded"/>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title" style="color:#f57c00;">Blue Gamis</span>
+                            <br>
+                            <span style="text-align: left; color:#9e9e9e">25/5/2016</span>
+														<?php $des = substr('Bagi kamu yang suka warna biru, ini cocok nih buat kamu', 0, 10) ?>
+                          <p><?php echo "$des ..."; ?></p>
+                        </div>
+                        <!-- <div class="card-action">
+                          <a href="<?php echo base_url()?>welcome/detail/<?php echo $key->id ?>" style="color:#1b5e20;">Readmore</a>
+                        </div> -->
+                        <div class="card-action">
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="">READ MORE</a>
+                        </div>
+                      </div>
+                    </div>
+
+         <div class="col s4">
+                      <div class="card">
+                        <div class="card-image">
+               <!--            <img class="materialboxed" width="650" src="<?php echo base_url() . $key->foto ?>"> -->
+                          <img src="http://busanamuslimodern.com/wp-content/uploads/2015/05/Model-Gamis-Batik-Kombinasi-Kebaya-Pesta.png" style="width:100%" alt="" class="img-rounded"/>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title" style="color:#f57c00;">Blue Gamis</span>
+                            <br>
+                            <span style="text-align: left; color:#9e9e9e">25/5/2016</span>
+														<?php $des = substr('Bagi kamu yang suka warna biru, ini cocok nih buat kamu', 0, 10) ?>
+                          <p><?php echo "$des ..."; ?></p>
+                        </div>
+                        <!-- <div class="card-action">
+                          <a href="<?php echo base_url()?>welcome/detail/<?php echo $key->id ?>" style="color:#1b5e20;">Readmore</a>
+                        </div> -->
+                        <div class="card-action">
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="">READ MORE</a>
+                        </div>
+                      </div>
+                    </div>
+<?php } ?>
+<?php if ($this->session->userdata('genre')=='male') { ?>
+    <div class="col s4">
+                      <div class="card">
+                        <div class="card-image">
+               <!--            <img class="materialboxed" width="650" src="<?php echo base_url() . $key->foto ?>"> -->
+                          <img src="https://s-media-cache-ak0.pinimg.com/736x/7e/18/f8/7e18f82bf0d48c16256ca1ed08ae84ce.jpg" style="width:100%" alt="" class="img-rounded"/>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title" style="color:#f57c00;">Blue Gamis</span>
+                            <br>
+                            <span style="text-align: left; color:#9e9e9e">25/5/2016</span>
+                            <?php $des = substr('Bagi kamu yang suka warna biru, ini cocok nih buat kamu', 0, 10) ?>
+                          <p><?php echo "$des ..."; ?></p>
+                        </div>
+                        <!-- <div class="card-action">
+                          <a href="<?php echo base_url()?>welcome/detail/<?php echo $key->id ?>" style="color:#1b5e20;">Readmore</a>
+                        </div> -->
+                        <div class="card-action">
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="">READ MORE</a>
+                        </div>
+                      </div>
+                    </div>
+
+        <div class="col s4">
+                      <div class="card">
+                        <div class="card-image">
+               <!--            <img class="materialboxed" width="650" src="<?php echo base_url() . $key->foto ?>"> -->
+                          <img src="https://s-media-cache-ak0.pinimg.com/736x/2d/aa/cc/2daacc07416e5e597484d63bacd78aa6.jpg" style="width:100%" alt="" class="img-rounded"/>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title" style="color:#f57c00;">Blue Gamis</span>
+                            <br>
+                            <span style="text-align: left; color:#9e9e9e">25/5/2016</span>
+                            <?php $des = substr('Bagi kamu yang suka warna biru, ini cocok nih buat kamu', 0, 10) ?>
+                          <p><?php echo "$des ..."; ?></p>
+                        </div>
+                        <!-- <div class="card-action">
+                          <a href="<?php echo base_url()?>welcome/detail/<?php echo $key->id ?>" style="color:#1b5e20;">Readmore</a>
+                        </div> -->
+                        <div class="card-action">
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="">READ MORE</a>
+                        </div>
+                      </div>
+                    </div>
+
+         <div class="col s4">
+                      <div class="card">
+                        <div class="card-image">
+               <!--            <img class="materialboxed" width="650" src="<?php echo base_url() . $key->foto ?>"> -->
+                          <img src="https://s-media-cache-ak0.pinimg.com/564x/14/4f/b0/144fb0f555b09f48ee5cef86172551e3.jpg" style="width:100%" alt="" class="img-rounded"/>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title" style="color:#f57c00;">Blue Gamis</span>
+                            <br>
+                            <span style="text-align: left; color:#9e9e9e">25/5/2016</span>
+                            <?php $des = substr('Bagi kamu yang suka warna biru, ini cocok nih buat kamu', 0, 10) ?>
+                          <p><?php echo "$des ..."; ?></p>
+                        </div>
+                        <!-- <div class="card-action">
+                          <a href="<?php echo base_url()?>welcome/detail/<?php echo $key->id ?>" style="color:#1b5e20;">Readmore</a>
+                        </div> -->
+                        <div class="card-action">
+                            <a style="color:#1b5e20;" class="modal-trigger waves-effect waves-light btn" href="">READ MORE</a>
+                        </div>
+                      </div>
+                    </div>
+<?php } ?>
+
+
+<!-- ----- -->
+
 
 		 <div class="col s12">
 			 <ul class="pagination" style="text-align:center;">
@@ -368,3 +507,4 @@
 	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
 </div> -->
 </div>
+

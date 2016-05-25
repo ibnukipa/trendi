@@ -34,10 +34,14 @@
 
 <section>
 	<div class="kotak-f tooltipped" data-position="right" data-delay="50" data-tooltip="Female's Fashion">
-		  <a href="<?php echo base_url()?>welcome/home/female/0/9"><img src="<?php echo base_url()?>assets/img/female_white.png" style=""></a>
+		<?php if ($this->session->userdata('genre')=='female') { ?>
+		  <a href="<?php echo base_url()?>welcome/home/female/0/9"><img src="<?php echo base_url()?>assets/img/female_white.png" style="background: #388E3C;"></a> <?php } else{?>
+		  <a href="<?php echo base_url()?>welcome/home/female/0/9"><img src="<?php echo base_url()?>assets/img/female_white.png" style=""></a> <?php } ?>
 	</div>
 	<div class="kotak-m tooltipped" style="top: 12%; right: 0" data-position="left" data-delay="50" data-tooltip="Male's Fashion">
-        <a href="<?php echo base_url()?>welcome/home/male/0/9"><img src="<?php echo base_url()?>assets/img/male_white.png" style=""></a>
+		<?php if ($this->session->userdata('genre')=='male') { ?>
+        <a href="<?php echo base_url()?>welcome/home/male/0/9"><img src="<?php echo base_url()?>assets/img/male_white.png" style="background: #388E3C;"></a><?php } else{?>
+        <a href="<?php echo base_url()?>welcome/home/male/0/9"><img src="<?php echo base_url()?>assets/img/male_white.png" style=""></a> <?php } ?>
 	</div>
 </section>
 
@@ -62,6 +66,7 @@
 	            	</div>
 	            	<div class="col_2">
 	                <h2>by EVENTS</h2>
+	                <p><a href="<?php echo base_url()?>welcome/category/lebaran/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Lebaran</a></p>
 	                <p><a href="<?php echo base_url()?>welcome/category/hang_out/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Hang Out</a></p>
 	                <p><a href="<?php echo base_url()?>welcome/category/party/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Party</a></p>
 	                <p><a href="<?php echo base_url()?>welcome/category/hiking/<?php echo $this->session->userdata('genre') ?>" accesskey="5" title="">Hiking</a></p>
